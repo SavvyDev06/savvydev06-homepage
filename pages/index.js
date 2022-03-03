@@ -16,9 +16,10 @@ const Page = () => {
   }
 
   const introStyleObj = {
-    fontSize: 28,
-    fontFamily: 'Pacifico',
-    background: 'linear-gradient(45deg, #f3ec78, #af4261)'
+    fontSize: 18,
+    fontFamily: 'Titillium Web',
+    fontWeight: '400',
+    color: 'white'
   }
 
   return (
@@ -26,15 +27,15 @@ const Page = () => {
       <Box
         borderRadius="lg"
         bg={useColorModeValue(
-          'whiteAlpha.500',
-          'purple.500'
+          'linear-gradient(45deg, #73C6E8, #A5FF8D)',
+          'linear-gradient(45deg, #6C28C4, #73C6E8)'
         )} /* whiteAlpha.200 */
         p={3}
         mb={6}
         align="center"
       >
         <HelloText />
-        <p style={paragraphStyleObj}>
+        <p style={introStyleObj}>
           I&apos;m Savvy, a student enterpreneur from Cyprus!
         </p>
       </Box>
