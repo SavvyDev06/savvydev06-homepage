@@ -1,4 +1,12 @@
-import { Container, Box, Heading, Image } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue
+} from '@chakra-ui/react'
+
+import HelloText from '../components/helloText'
 
 const Page = () => {
   const paragraphStyleObj = {
@@ -7,10 +15,28 @@ const Page = () => {
     fontWeight: '400'
   }
 
+  const introStyleObj = {
+    fontSize: 28,
+    fontFamily: 'Pacifico',
+    background: 'linear-gradient(45deg, #f3ec78, #af4261)'
+  }
+
   return (
     <Container>
-      <Box borderRadius="lg" bg="purple" p={3} mb={6} align="center">
-        Hello, I&apos;m Savvy, a student enterpreneur from Cyprus!
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue(
+          'whiteAlpha.500',
+          'purple.500'
+        )} /* whiteAlpha.200 */
+        p={3}
+        mb={6}
+        align="center"
+      >
+        <HelloText />
+        <p style={paragraphStyleObj}>
+          I&apos;m Savvy, a student enterpreneur from Cyprus!
+        </p>
       </Box>
 
       <Box display={{ md: 'flex' }}>
