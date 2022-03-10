@@ -1,15 +1,20 @@
+import NextLink from 'next/link'
 import {
   Container,
   Box,
   Heading,
   Image,
+  Link,
+  Button,
   useColorModeValue
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import ParagraphMain from '../components/paragraphMain'
 import ParagraphHeading from '../components/paragraphHeading'
-
 import CursiveHeading from '../components/cursiveHeading'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
+import HeadsUpToast from '../components/headsUpToast'
 
 const Page = () => {
   const introStyleObj = {
@@ -18,6 +23,7 @@ const Page = () => {
 
   return (
     <Container>
+      <HeadsUpToast />
       <Box
         borderRadius="lg"
         bg={useColorModeValue(
@@ -65,7 +71,85 @@ const Page = () => {
         <Heading fontWeight="600" as="h3" variant="section-title">
           Work
         </Heading>
-        <ParagraphMain>Paragraph</ParagraphMain>
+        <ParagraphMain>
+          Savvas – better known as Savvy – is a full-stack software developer
+          with a passion of creating useful software, to help improve our daily
+          lives through the power of code.
+          <br />
+          He often finds himself engineering hardware as well, such as printed
+          circuit boards, 3D Prints / CAD, and regularly tinkers with Arduino
+          and Raspberry Pi boards to make all sorts of cool stuff.
+          <br />
+          Some of Savvy’s most notable software projects include{' '}
+          <NextLink href="/projects/degore">
+            <Link>DeGore</Link>
+          </NextLink>
+          ,{' '}
+          <NextLink href="/projects/tfc">
+            <Link>The Five Chapters</Link>
+          </NextLink>{' '}
+          and{' '}
+          <NextLink href="/projects/scpu">
+            <Link>SCP United</Link>
+          </NextLink>
+          , as well as the{' '}
+          <NextLink href="/projects/qckboard">
+            <Link>QckBoard Macro+</Link>
+          </NextLink>{' '}
+          on the hardware side of things.
+        </ParagraphMain>
+        <Box align="center" my={4}>
+          <NextLink href="/projects">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+              My Portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>2004</BioYear>
+          Born in Nicosia, Cyprus.
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Passed ECDL C++ Programming Course with distinction
+        </BioSection>
+        <BioSection>
+          <BioYear>20??</BioYear>
+          More to be added soon
+        </BioSection>
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Languages
+        </Heading>
+        <ParagraphMain>JavaScriptC++</ParagraphMain>
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Frameworks
+        </Heading>
+        <ParagraphMain>React, NextJS, Electron, NuxtJS</ParagraphMain>
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Tech Stacks
+        </Heading>
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Software
+        </Heading>
+        <ParagraphMain>Docker (more to be added)</ParagraphMain>
       </Section>
     </Container>
   )
