@@ -9,7 +9,7 @@ import Section from '../components/section'
 import ParagraphMain from '../components/paragraphMain'
 import ParagraphHeading from '../components/paragraphHeading'
 
-import HelloText from '../components/helloText'
+import CursiveHeading from '../components/cursiveHeading'
 
 const Page = () => {
   const introStyleObj = {
@@ -28,7 +28,7 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        <HelloText>Hello,</HelloText>
+        <CursiveHeading>Hello,</CursiveHeading>
         <ParagraphHeading style={introStyleObj}>
           I&apos;m Savvy, a student enterpreneur from Cyprus!
         </ParagraphHeading>
