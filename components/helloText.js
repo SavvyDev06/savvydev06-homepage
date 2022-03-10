@@ -12,8 +12,8 @@ const GradientText = styled.span`
   font-family: 'Pacifico', cursive;
 `
 
-const HelloText = () => {
-  return <GradientText>Hello,</GradientText>
-}
+// const HelloText = () => {
+//   return <GradientText>Hello,</GradientText>
+// }
 
-export default HelloText
+export default GradientText

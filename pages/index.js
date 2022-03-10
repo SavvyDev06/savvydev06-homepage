@@ -5,20 +5,14 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
+import Section from '../components/section'
+import ParagraphMain from '../components/paragraphMain'
+import ParagraphHeading from '../components/paragraphHeading'
 
 import HelloText from '../components/helloText'
 
 const Page = () => {
-  const paragraphStyleObj = {
-    fontSize: 18,
-    fontFamily: 'Titillium Web',
-    fontWeight: '400'
-  }
-
   const introStyleObj = {
-    fontSize: 18,
-    fontFamily: 'Titillium Web',
-    fontWeight: '400',
     color: 'white'
   }
 
@@ -34,10 +28,10 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        <HelloText />
-        <p style={introStyleObj}>
+        <HelloText>Hello,</HelloText>
+        <ParagraphHeading style={introStyleObj}>
           I&apos;m Savvy, a student enterpreneur from Cyprus!
-        </p>
+        </ParagraphHeading>
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,9 +39,9 @@ const Page = () => {
           <Heading as="h2" fontWeight="500" variant="page-title">
             Savvas M. Agisilaou
           </Heading>
-          <p style={paragraphStyleObj}>
+          <ParagraphHeading>
             Digital Creator ( Software &amp; Game Developer / Music Producer )
-          </p>
+          </ParagraphHeading>
         </Box>
         <Box
           flexShrink={0}
@@ -67,6 +61,12 @@ const Page = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          Work
+        </Heading>
+        <ParagraphMain>Paragraph</ParagraphMain>
+      </Section>
     </Container>
   )
 }
