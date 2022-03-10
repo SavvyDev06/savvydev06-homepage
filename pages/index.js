@@ -73,7 +73,7 @@ const Page = () => {
         </Heading>
         <ParagraphMain>
           Savvas – better known as Savvy – is a full-stack software developer
-          with a passion of creating useful software, to help improve our daily
+          with a passion for creating useful software, to help improve our daily
           lives through the power of code.
           <br />
           He often finds himself engineering hardware as well, such as printed
