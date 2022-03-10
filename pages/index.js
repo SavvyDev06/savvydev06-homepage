@@ -129,27 +129,42 @@ const Page = () => {
         <Heading fontWeight="600" as="h3" variant="section-title">
           Languages
         </Heading>
-        <ParagraphMain>JavaScript, C++</ParagraphMain>
+        <ParagraphMain>
+          JavaScript, TypeScript, C++, C# (dotnet), Python, HTML&amp;CSS
+          <br />
+          Learning: TypeScript <br />
+          Planned to Learn: Redis, Rust, Go
+        </ParagraphMain>
       </Section>
 
       <Section delay={0.1}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Frameworks
         </Heading>
-        <ParagraphMain>React, NextJS, Electron, NuxtJS</ParagraphMain>
+        <ParagraphMain>
+          React, NextJS, Electron, NuxtJS
+          <br />
+          Learning: Flutter <br />
+          Planned to Learn: Xamarin
+        </ParagraphMain>
       </Section>
 
       <Section delay={0.1}>
         <Heading fontWeight="600" as="h3" variant="section-title">
-          Tech Stacks
+          Technologies (Tech Stacks)
         </Heading>
+        <ParagraphMain>
+          Docker, PostgreSQL, MongoDB, Apache Server (more to be added)
+        </ParagraphMain>
       </Section>
 
       <Section delay={0.1}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Software
         </Heading>
-        <ParagraphMain>Docker (more to be added)</ParagraphMain>
+        <ParagraphMain>
+          FL Studio, Ableton Live, Adobe Premiere Pro (more to be added)
+        </ParagraphMain>
       </Section>
     </Container>
   )
