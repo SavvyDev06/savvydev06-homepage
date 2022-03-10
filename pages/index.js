@@ -129,7 +129,7 @@ const Page = () => {
         <Heading fontWeight="600" as="h3" variant="section-title">
           Languages
         </Heading>
-        <ParagraphMain>JavaScriptC++</ParagraphMain>
+        <ParagraphMain>JavaScript, C++</ParagraphMain>
       </Section>
 
       <Section delay={0.1}>
