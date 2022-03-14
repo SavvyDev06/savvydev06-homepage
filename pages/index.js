@@ -10,11 +10,48 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import ParagraphMain from '../components/paragraphMain'
+import ParagraphBio from '../components/paragraphBio'
 import ParagraphHeading from '../components/paragraphHeading'
 import CursiveHeading from '../components/cursiveHeading'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import HeadsUpToast from '../components/headsUpToast'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCakeCandles,
+  faLaptopCode,
+  faAnglesRight,
+  faRightToBracket,
+  faRocket,
+  faGears,
+  faC,
+  faHashtag,
+  faGlasses,
+  faCalendarCheck,
+  faAtom,
+  faN,
+  faFeather,
+  faDatabase,
+  faLeaf,
+  faFeatherPointed,
+  faShapes,
+  faCarrot,
+  faMusic,
+  faClapperboard
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faJsSquare,
+  faPython,
+  faHtml5,
+  faReact,
+  faVuejs,
+  faMicrosoft,
+  faRust,
+  faGolang,
+  faDocker
+} from '@fortawesome/free-brands-svg-icons'
 
 const Page = () => {
   const introStyleObj = {
@@ -113,58 +150,111 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>2004</BioYear>
-          Born in Nicosia, Cyprus.
+          <FontAwesomeIcon icon={faCakeCandles} /> Born in Nicosia, Cyprus.
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          Passed ECDL C++ Programming Course with distinction
+          <FontAwesomeIcon icon={faLaptopCode} /> Passed ECDL C++ Programming
+          Course with distinction
         </BioSection>
         <BioSection>
           <BioYear>20??</BioYear>
-          More to be added soon
+          <FontAwesomeIcon icon={faAnglesRight} /> More to be added
+        </BioSection>
+        <BioSection>
+          <BioYear>2021-present</BioYear>
+          <FontAwesomeIcon icon={faRightToBracket} /> Joined the team at SCP
+          United as a programmer
+        </BioSection>
+        <BioSection>
+          <BioYear>2021-present</BioYear>
+          <FontAwesomeIcon icon={faRocket} /> Founded DeGore, and work as a lead
+          developer
         </BioSection>
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Languages
         </Heading>
-        <ParagraphMain>
-          JavaScript, TypeScript, C++, C# (dotnet), Python, HTML&amp;CSS
+        <ParagraphBio>
+          <FontAwesomeIcon icon={faJsSquare} /> JavaScript
           <br />
-          Learning: TypeScript <br />
-          Planned to Learn: Redis, Rust, Go
-        </ParagraphMain>
+          <FontAwesomeIcon icon={faGears} /> TypeScript
+          <br />
+          <FontAwesomeIcon icon={faC} /> C++
+          <br />
+          <FontAwesomeIcon icon={faHashtag} /> C# (dotnet)
+          <br />
+          <FontAwesomeIcon icon={faPython} /> Python
+          <br />
+          <FontAwesomeIcon icon={faHtml5} /> HTML&amp;CSS
+          <br />
+          <FontAwesomeIcon icon={faGlasses} /> Learning:{' '}
+          <FontAwesomeIcon icon={faGears} /> TypeScript <br />
+          <FontAwesomeIcon icon={faCalendarCheck} /> Planned to Learn:{' '}
+          <FontAwesomeIcon icon={faRust} /> Rust,{' '}
+          <FontAwesomeIcon icon={faGolang} /> Go
+        </ParagraphBio>
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.4}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Frameworks
         </Heading>
-        <ParagraphMain>
-          React, NextJS, Electron, NuxtJS
+        <ParagraphBio>
+          <FontAwesomeIcon icon={faReact} /> React
           <br />
-          Learning: Flutter <br />
-          Planned to Learn: Xamarin
-        </ParagraphMain>
+          <FontAwesomeIcon icon={faN} /> NextJS
+          <br />
+          <FontAwesomeIcon icon={faAtom} /> Electron
+          <br />
+          <FontAwesomeIcon icon={faVuejs} /> NuxtJS
+          <br />
+          <FontAwesomeIcon icon={faGlasses} /> Learning:{' '}
+          <FontAwesomeIcon icon={faFeather} /> Flutter
+          <br />
+          <FontAwesomeIcon icon={faCalendarCheck} /> Planned to Learn:{' '}
+          <FontAwesomeIcon icon={faMicrosoft} /> Xamarin
+        </ParagraphBio>
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.5}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Technologies (Tech Stacks)
         </Heading>
-        <ParagraphMain>
-          Docker, PostgreSQL, MongoDB, Apache Server (more to be added)
-        </ParagraphMain>
+        <ParagraphBio>
+          <FontAwesomeIcon icon={faDocker} /> Docker
+          <br />
+          <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
+          <br />
+          <FontAwesomeIcon icon={faLeaf} /> MongoDB
+          <br />
+          <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server (more to be
+          added)
+          <br />
+          <FontAwesomeIcon icon={faShapes} /> Planned to Learn: Redis
+        </ParagraphBio>
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.6}>
         <Heading fontWeight="600" as="h3" variant="section-title">
           Software
         </Heading>
-        <ParagraphMain>
-          FL Studio, Ableton Live, Adobe Premiere Pro (more to be added)
-        </ParagraphMain>
+        <ParagraphBio>
+          <FontAwesomeIcon icon={faCarrot} /> FL Studio
+          <br />
+          <FontAwesomeIcon icon={faMusic} /> Ableton Live
+          <br />
+          <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro (more to
+          be added)
+        </ParagraphBio>
+      </Section>
+
+      <Section delay={0.7}>
+        <Heading fontWeight="600" as="h3" variant="section-title">
+          💜
+        </Heading>
       </Section>
     </Container>
   )
