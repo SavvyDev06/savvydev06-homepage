@@ -303,6 +303,17 @@ const Page = () => {
         <Heading fontWeight="600" as="h3" variant="section-title">
           💜
         </Heading>
+        <ParagraphBio>
+          Coding,{' '}
+          <Link href="https://unitedweco.de/degore" target="_blank">
+            Artificial Intelligence / Machine Learning
+          </Link>
+          , PCB Design, CAD, Music (Digital Composition &amp; Piano), Aerospace,
+          Podcasts,{' '}
+          <Link href="https://blog.unitedweco.de" target="_blank">
+            Blogging
+          </Link>
+        </ParagraphBio>
       </Section>
     </Container>
   )
