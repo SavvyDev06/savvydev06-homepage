@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import ParagraphMain from '../components/paragraphMain'
+import ParagraphLeftPadded from '../components/paragraphLeftPadded'
 import ParagraphBio from '../components/paragraphBio'
 import ParagraphHeading from '../components/paragraphHeading'
 import CursiveHeading from '../components/cursiveHeading'
@@ -38,7 +39,8 @@ import {
   faShapes,
   faCarrot,
   faMusic,
-  faClapperboard
+  faClapperboard,
+  faCheckToSlot
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -178,23 +180,38 @@ const Page = () => {
           Languages
         </Heading>
         <ParagraphBio>
-          <FontAwesomeIcon icon={faJsSquare} /> JavaScript
-          <br />
-          <FontAwesomeIcon icon={faGears} /> TypeScript
-          <br />
-          <FontAwesomeIcon icon={faC} /> C++
-          <br />
-          <FontAwesomeIcon icon={faHashtag} /> C# (dotnet)
-          <br />
-          <FontAwesomeIcon icon={faPython} /> Python
-          <br />
-          <FontAwesomeIcon icon={faHtml5} /> HTML&amp;CSS
-          <br />
-          <FontAwesomeIcon icon={faGlasses} /> Learning:{' '}
-          <FontAwesomeIcon icon={faGears} /> TypeScript <br />
-          <FontAwesomeIcon icon={faCalendarCheck} /> Planned to Learn:{' '}
-          <FontAwesomeIcon icon={faRust} /> Rust,{' '}
-          <FontAwesomeIcon icon={faGolang} /> Go
+          <FontAwesomeIcon icon={faCheckToSlot} />{' '}
+          <b>
+            <u>Knowledgeable</u>
+          </b>
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faJsSquare} /> JavaScript
+            <br />
+            <FontAwesomeIcon icon={faGears} /> TypeScript
+            <br />
+            <FontAwesomeIcon icon={faC} /> C++
+            <br />
+            <FontAwesomeIcon icon={faHashtag} /> C# (dotnet)
+            <br />
+            <FontAwesomeIcon icon={faPython} /> Python
+            <br />
+            <FontAwesomeIcon icon={faHtml5} /> HTML&amp;CSS
+          </ParagraphLeftPadded>
+          <FontAwesomeIcon icon={faGlasses} />{' '}
+          <b>
+            <u>Learning</u>
+          </b>{' '}
+          <ParagraphMain>
+            <FontAwesomeIcon icon={faGears} /> TypeScript <br />
+          </ParagraphMain>
+          <FontAwesomeIcon icon={faCalendarCheck} />{' '}
+          <b>
+            <u>Planned to Learn</u>
+          </b>{' '}
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faRust} /> Rust <br />
+            <FontAwesomeIcon icon={faGolang} /> Go
+          </ParagraphLeftPadded>
         </ParagraphBio>
       </Section>
 
@@ -203,19 +220,33 @@ const Page = () => {
           Frameworks
         </Heading>
         <ParagraphBio>
-          <FontAwesomeIcon icon={faReact} /> React
-          <br />
-          <FontAwesomeIcon icon={faN} /> NextJS
-          <br />
-          <FontAwesomeIcon icon={faAtom} /> Electron
-          <br />
-          <FontAwesomeIcon icon={faVuejs} /> NuxtJS
-          <br />
-          <FontAwesomeIcon icon={faGlasses} /> Learning:{' '}
-          <FontAwesomeIcon icon={faFeather} /> Flutter
-          <br />
-          <FontAwesomeIcon icon={faCalendarCheck} /> Planned to Learn:{' '}
-          <FontAwesomeIcon icon={faMicrosoft} /> Xamarin
+          <FontAwesomeIcon icon={faCheckToSlot} />{' '}
+          <b>
+            <u>Knowledgeable</u>
+          </b>
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faReact} /> React
+            <br />
+            <FontAwesomeIcon icon={faN} /> NextJS
+            <br />
+            <FontAwesomeIcon icon={faAtom} /> Electron
+            <br />
+            <FontAwesomeIcon icon={faVuejs} /> NuxtJS
+          </ParagraphLeftPadded>
+          <FontAwesomeIcon icon={faGlasses} />{' '}
+          <b>
+            <u>Learning</u>
+          </b>{' '}
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faFeather} /> Flutter
+          </ParagraphLeftPadded>
+          <FontAwesomeIcon icon={faCalendarCheck} />{' '}
+          <b>
+            <u>Planned to Learn</u>
+          </b>{' '}
+          <ParagraphMain>
+            <FontAwesomeIcon icon={faMicrosoft} /> Xamarin
+          </ParagraphMain>
         </ParagraphBio>
       </Section>
 
@@ -224,16 +255,27 @@ const Page = () => {
           Technologies (Tech Stacks)
         </Heading>
         <ParagraphBio>
-          <FontAwesomeIcon icon={faDocker} /> Docker
-          <br />
-          <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
-          <br />
-          <FontAwesomeIcon icon={faLeaf} /> MongoDB
-          <br />
-          <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server (more to be
-          added)
-          <br />
-          <FontAwesomeIcon icon={faShapes} /> Planned to Learn: Redis
+          <FontAwesomeIcon icon={faCheckToSlot} />{' '}
+          <b>
+            <u>Knowledgeable</u>
+          </b>
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faDocker} /> Docker
+            <br />
+            <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
+            <br />
+            <FontAwesomeIcon icon={faLeaf} /> MongoDB
+            <br />
+            <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server (more to
+            be added)
+          </ParagraphLeftPadded>
+          <FontAwesomeIcon icon={faCalendarCheck} />{' '}
+          <b>
+            <u>Planned to Learn</u>
+          </b>{' '}
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faShapes} /> Redis
+          </ParagraphLeftPadded>
         </ParagraphBio>
       </Section>
 
