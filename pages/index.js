@@ -284,12 +284,18 @@ const Page = () => {
           Software
         </Heading>
         <ParagraphBio>
-          <FontAwesomeIcon icon={faCarrot} /> FL Studio
-          <br />
-          <FontAwesomeIcon icon={faMusic} /> Ableton Live
-          <br />
-          <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro (more to
-          be added)
+          <FontAwesomeIcon icon={faCheckToSlot} />{' '}
+          <b>
+            <u>Knowledgeable</u>
+          </b>
+          <ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faCarrot} /> FL Studio
+            <br />
+            <FontAwesomeIcon icon={faMusic} /> Ableton Live
+            <br />
+            <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro (more
+            to be added)
+          </ParagraphLeftPadded>
         </ParagraphBio>
       </Section>
 
