@@ -120,25 +120,25 @@ const Page = () => {
           and Raspberry Pi boards to make all sorts of cool stuff.
           <br />
           Some of Savvy’s most notable software projects include{' '}
-          <NextLink href="/projects/degore">
+          <NextLink href="/projects/degore" scroll={false} passHref>
             <Link>DeGore</Link>
           </NextLink>
           ,{' '}
-          <NextLink href="/projects/tfc">
+          <NextLink href="/projects/tfc" scroll={false} passHref>
             <Link>The Five Chapters</Link>
           </NextLink>{' '}
           and{' '}
-          <NextLink href="/projects/scpu">
+          <NextLink href="/projects/scpu" scroll={false} passHref>
             <Link>SCP United</Link>
           </NextLink>
           , as well as the{' '}
-          <NextLink href="/projects/qckboard">
+          <NextLink href="/projects/qckboard" scroll={false} passHref>
             <Link>QckBoard Macro+</Link>
           </NextLink>{' '}
           on the hardware side of things.
         </ParagraphMain>
         <Box align="center" my={4}>
-          <NextLink href="/projects">
+          <NextLink href="/projects" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My Portfolio
             </Button>
@@ -301,7 +301,7 @@ const Page = () => {
 
       <Section delay={0.7}>
         <Heading fontWeight="600" as="h3" variant="section-title">
-          💜
+          I 💜
         </Heading>
         <ParagraphBio>
           Coding,{' '}

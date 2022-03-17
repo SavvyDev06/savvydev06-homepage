@@ -77,8 +77,8 @@ const Projects = () => {
             title="One Night at Baldi's Literature Club"
             thumbnail={thumbONABLC}
           >
-            Combining Baldi's Basics, Doki Doki Literature Club, and Five Nights
-            At Freddy's into one singleplayer horror experience.
+            Combining Baldi&apos;s Basics, Doki Doki Literature Club, and Five
+            Nights At Freddy&apos;s into one singleplayer horror experience.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
