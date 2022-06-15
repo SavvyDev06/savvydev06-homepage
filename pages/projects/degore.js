@@ -12,7 +12,7 @@ const Work = () => {
           DeGore <Badge>2021</Badge>
         </Title>
         <P>
-          Discord's most powerful image moderation solution, powered by
+          Discord&apos;s most powerful image moderation solution, powered by
           Artificial Intelligence, sophisticated decision-making &amp; hashing
           algorithms and much more.
         </P>

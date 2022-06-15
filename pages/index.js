@@ -353,11 +353,21 @@ const Page = () => {
                 <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>@United_We_Code</Button>
               </Link>
             </ListItem>
+            <ListItem>
+              <Link href="https://discord.com/users/335413012682899456" target="_blank">
+                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoDiscord} />}>@SavvyDev06#4043</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/SavvyDev06" target="_blank">
+                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoInstagram} />}>@SavvyDev06</Button>
+              </Link>
+            </ListItem>
           </List>
 
           <SimpleGrid columns={[1,2,2]} gap={6}>
-            <GridItem href="https://www.youtube.com/channel/UCV-cdJV5CzsyqoykTdvDFnQ" title="United We Code" thumbnail={thumbYouTube}>My YouTube Channel</GridItem>
-            <GridItem href="https://unitedweco.de/degore" title="DeGore" thumbnail={thumbDeGore}>The most advanced AI-Powered image moderation solution for communities on the Discord Platform</GridItem>
+            <GridItem href="https://www.youtube.com/channel/UCV-cdJV5CzsyqoykTdvDFnQ" title="United We Code" thumbnail={thumbYouTube}>My official YouTube Channel</GridItem>
+            <GridItem href="https://unitedweco.de/degore" title="DeGore" thumbnail={thumbDeGore}>AI image moderation for communities on the Discord Platform</GridItem>
           </SimpleGrid>
         </Section>
       </Container>
