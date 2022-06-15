@@ -38,7 +38,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCakeCandles,
   faLaptopCode,
-  faAnglesRight,
   faRightToBracket,
   faRocket,
   faGears,
@@ -56,7 +55,14 @@ import {
   faCarrot,
   faMusic,
   faClapperboard,
-  faCheckToSlot
+  faCheckToSlot,
+  faMicrochip,
+  faMicroscope,
+  faTrophy,
+  faMicrophoneAlt,
+  faCube,
+  faAngleDoubleRight,
+  faLaptop
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -68,7 +74,8 @@ import {
   faMicrosoft,
   faRust,
   faGolang,
-  faDocker
+  faDocker,
+  faUnity
 } from '@fortawesome/free-brands-svg-icons'
 
 const Page = () => {
@@ -172,13 +179,49 @@ const Page = () => {
             <FontAwesomeIcon icon={faCakeCandles} /> Born in Nicosia, Cyprus.
           </BioSection>
           <BioSection>
+            <BioYear>2008</BioYear>
+            <FontAwesomeIcon icon={faLaptop} /> Started tinkering with a laptop
+          </BioSection>
+          <BioSection>
+            <BioYear>2012</BioYear>
+            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to 'code' with Scratch on an Arduino
+          </BioSection>
+          <BioSection>
+            <BioYear>2015</BioYear>
+            <FontAwesomeIcon icon={faPython} /> Learnt the basics of Python, and tinkered with other languages
+          </BioSection>
+          <BioSection>
+            <BioYear>2017</BioYear>
+            <FontAwesomeIcon icon={faUnity} /> Started creating games with the Unity Game Engine (v2017.x)
+          </BioSection>
+          <BioSection>
+            <BioYear>2018</BioYear>
+            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a fast line following car for the Robotex 2018 Arduino Line following competition (LlamasInPyjamas Team)
+          </BioSection>
+          <BioSection>
+            <BioYear>2018</BioYear>
+            <FontAwesomeIcon icon={faTrophy} /> Official Winner of the Exclusive NASA &amp; CSEO Cyprus Space Apps Challenge 2018 (ASRocket Team) - Certificate Hand-Signed by <Link href="https://en.wikipedia.org/wiki/Anna_Lee_Fisher" target="_blank">Anna Lee Fisher (astronaut)</Link>!
+          </BioSection>
+          <BioSection>
             <BioYear>2018</BioYear>
             <FontAwesomeIcon icon={faLaptopCode} /> Passed ECDL C++ Programming
             Course with distinction
           </BioSection>
           <BioSection>
-            <BioYear>20??</BioYear>
-            <FontAwesomeIcon icon={faAnglesRight} /> More to be added
+            <BioYear>2019</BioYear>
+            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a new speedy line following car for the Robotex 2019 Arduino Line following competition (FastAndFurious Team)
+          </BioSection>
+          <BioSection>
+            <BioYear>2019</BioYear>
+            <FontAwesomeIcon icon={faMicroscope} /> Interned at the RISE (Interactive Media Smart Systems and Emerging Technologies) Research Centre for STEM and Gaming
+          </BioSection>
+          <BioSection>
+            <BioYear>2020</BioYear>
+            <FontAwesomeIcon icon={faMicroscope} /> Interned (once more!) at the RiseUP Research Centre on Interactive Media Smart Systems and Emerging Technologies &amp; successfully completed the Gaming and Artificial Intelligence Scholars Program, with all requirements passed for graduation
+          </BioSection>
+          <BioSection>
+            <BioYear>2021</BioYear>
+            <FontAwesomeIcon icon={faMusic} /> Passed Grade 5 ABRSM Music Theory
           </BioSection>
           <BioSection>
             <BioYear>2021-present</BioYear>
@@ -310,8 +353,15 @@ const Page = () => {
               <br />
               <FontAwesomeIcon icon={faMusic} /> Ableton Live
               <br />
-              <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro (more
-              to be added)
+              <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro
+              <br />
+              <FontAwesomeIcon icon={faMicrophoneAlt} /> Adobe Audition
+              <br />
+              <FontAwesomeIcon icon={faMicrosoft} /> Visual Studio &amp; VS Code
+              <br />
+              <FontAwesomeIcon icon={faCube} /> JetBrains Rider
+              <br />
+              <FontAwesomeIcon icon={faAngleDoubleRight} /> ...and much more!
             </ParagraphLeftPadded>
           </ParagraphBio>
         </Section>
