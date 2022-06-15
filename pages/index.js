@@ -5,6 +5,10 @@ import {
   Heading,
   Image,
   Link,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon,
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -18,6 +22,17 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import HeadsUpToast from '../components/headsUpToast'
+import {GridItem} from '../components/grid-item'
+
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord
+} from 'react-icons/io5'
+
+import thumbYouTube from "../public/images/links/youtube.png"
+import thumbDeGore from '../public/images/projects/degore-thumbnail.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -316,6 +331,34 @@ const Page = () => {
               Blogging
             </Link>
           </ParagraphBio>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/SavvyDev06" target="_blank">
+                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoGithub} />}>@SavvyDev06</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/SavvyDev06" target="_blank">
+                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>@SavvyDev06</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/United_We_Code" target="_blank">
+                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>@United_We_Code</Button>
+              </Link>
+            </ListItem>
+          </List>
+
+          <SimpleGrid columns={[1,2,2]} gap={6}>
+            <GridItem href="https://www.youtube.com/channel/UCV-cdJV5CzsyqoykTdvDFnQ" title="United We Code" thumbnail={thumbYouTube}>My YouTube Channel</GridItem>
+            <GridItem href="https://unitedweco.de/degore" title="DeGore" thumbnail={thumbDeGore}>The most advanced AI-Powered image moderation solution for communities on the Discord Platform</GridItem>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
