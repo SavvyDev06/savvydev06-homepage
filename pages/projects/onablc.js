@@ -16,12 +16,12 @@ const Work = () => {
     <Layout title="ONABLC">
       <Container>
         <Title>
-          One Night at Baldi's Literature Club <Badge>2018</Badge>
+          One Night at Baldi&apos;s Literature Club <Badge>2018</Badge>
         </Title>
         <P>
-          A 2D game which combines the Baldi's Basics, Doki Doki Literature
-          Club, and Five Nights At Freddy's games all into one single-player
-          comedy horror experience.
+          A 2D game which combines the Baldi&apos;s Basics, Doki Doki Literature
+          Club, and Five Nights At Freddy&apos;s games all into one
+          single-player comedy horror experience.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -81,7 +81,7 @@ const Work = () => {
             border="0"
             frameBorder="no"
             framespacing="0"
-            allowfullscreen="true"
+            allowFullScreen="true"
             data-children-count="0"
           >
             {' '}

@@ -46,8 +46,8 @@ const Work = () => {
           <ListItem>
             <Meta>Please Note</Meta>
             <span>
-              I'm really tired in the video below (it was recorded very early in
-              the morning), so please excuse my sleepy voice.
+              I&apos;m really tired in the video below (it was recorded very
+              early in the morning), so please excuse my sleepy voice.
             </span>
           </ListItem>
         </List>
