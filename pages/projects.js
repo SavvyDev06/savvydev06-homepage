@@ -62,7 +62,7 @@ const Projects = () => {
 
           <Section delay={0.4}>
             <ProjectGridItem
-              id="qckboard-macro-plus"
+              id="qckboard"
               title="QckBoard Macro Plus"
               thumbnail={thumbQckBoard}
             >

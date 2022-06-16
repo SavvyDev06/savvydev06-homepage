@@ -47,7 +47,7 @@ const Work = () => {
         </List>
 
         <ProjectImage
-          src="/images/project-showcase/tfc_01.png"
+          src="/images/project-showcase/tfc_01.jpg"
           alt="The forest of The Five Chapters"
         />
         <AspectRatio maxW="640px" ratio={1.7} my={4}>
