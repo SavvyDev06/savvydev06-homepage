@@ -69,8 +69,7 @@ const Projects = () => {
               title="QckBoard Macro Plus"
               thumbnail={thumbQckBoard}
             >
-              An Express REST API used to get random funny quotes from dankpods
-              videos.
+              A custom-made macro keypad for enterprise and home use (The PCB was designed from scratch).
             </ProjectGridItem>
           </Section>
         </SimpleGrid>
@@ -116,7 +115,7 @@ const Projects = () => {
               thumbnail={thumbONABLC}
             >
               Combining Baldi&apos;s Basics, Doki Doki Literature Club, and Five
-              Nights At Freddy&apos;s into one singleplayer horror experience.
+              Nights At Freddy&apos;s into one single-player horror experience.
             </ProjectGridItem>
           </Section>
         </SimpleGrid>

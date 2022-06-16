@@ -184,7 +184,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2012</BioYear>
-            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to &apos;code&apos; with Scratch on an Arduino
+            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to &apos;code&apos; with Scratch on a Raspberry Pi
           </BioSection>
           <BioSection>
             <BioYear>2015</BioYear>
