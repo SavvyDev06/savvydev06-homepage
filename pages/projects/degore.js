@@ -1,4 +1,11 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  AspectRatio
+} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraphMain'
@@ -37,7 +44,10 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Blog Post</Meta>
-            <Link href="https://blog.unitedweco.de/celebrating-a-year-of-degore/" target="_blank">
+            <Link
+              href="https://blog.unitedweco.de/celebrating-a-year-of-degore/"
+              target="_blank"
+            >
               Celebrating a year of DeGore <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -45,8 +55,17 @@ const Work = () => {
 
         <ProjectImage
           src="/images/project-showcase/degore_01.png"
-          alt="DeGore logo"
+          alt="The official DeGore website"
         />
+        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+          <iframe
+            src="https://www.youtube.com/embed/40D1wtBdxyQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </AspectRatio>
       </Container>
     </Layout>
   )

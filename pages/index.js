@@ -22,7 +22,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import HeadsUpToast from '../components/headsUpToast'
-import {GridItem} from '../components/grid-item'
+import { GridItem } from '../components/grid-item'
 
 import {
   IoLogoTwitter,
@@ -31,7 +31,7 @@ import {
   IoLogoDiscord
 } from 'react-icons/io5'
 
-import thumbYouTube from "../public/images/links/youtube.png"
+import thumbYouTube from '../public/images/links/youtube.png'
 import thumbDeGore from '../public/images/projects/degore-thumbnail.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -62,7 +62,8 @@ import {
   faMicrophoneAlt,
   faCube,
   faAngleDoubleRight,
-  faLaptop
+  faLaptop,
+  faHiking
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -184,23 +185,37 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2012</BioYear>
-            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to &apos;code&apos; with Scratch on a Raspberry Pi
+            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to &apos;code&apos;
+            with Scratch on a Raspberry Pi
           </BioSection>
           <BioSection>
             <BioYear>2015</BioYear>
-            <FontAwesomeIcon icon={faPython} /> Learnt the basics of Python, and tinkered with other languages
+            <FontAwesomeIcon icon={faPython} /> Learnt the basics of Python, and
+            tinkered with other languages
           </BioSection>
           <BioSection>
             <BioYear>2017</BioYear>
-            <FontAwesomeIcon icon={faUnity} /> Started creating games with the Unity Game Engine (v2017.x)
+            <FontAwesomeIcon icon={faUnity} /> Started creating games with the
+            Unity Game Engine (v2017.x)
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
-            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a fast line following car for the Robotex 2018 Arduino Line following competition (LlamasInPyjamas Team)
+            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a
+            fast line following car for the Robotex 2018 Arduino Line following
+            competition (LlamasInPyjamas Team)
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
-            <FontAwesomeIcon icon={faTrophy} /> Official Winner of the Exclusive NASA &amp; CSEO Cyprus Space Apps Challenge 2018 (ASRocket Team) - Certificate Hand-Signed by <Link href="https://en.wikipedia.org/wiki/Anna_Lee_Fisher" target="_blank">Anna Lee Fisher (astronaut)</Link>!
+            <FontAwesomeIcon icon={faTrophy} /> Official Winner of the Exclusive
+            NASA &amp; CSEO Cyprus Space Apps Challenge 2018 (ASRocket Team) -
+            Certificate Hand-Signed by{' '}
+            <Link
+              href="https://en.wikipedia.org/wiki/Anna_Lee_Fisher"
+              target="_blank"
+            >
+              Anna Lee Fisher (astronaut)
+            </Link>
+            !
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
@@ -209,15 +224,28 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2019</BioYear>
-            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a new speedy line following car for the Robotex 2019 Arduino Line following competition (FastAndFurious Team)
+            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a
+            new speedy line following car for the Robotex 2019 Arduino Line
+            following competition (FastAndFurious Team)
           </BioSection>
           <BioSection>
             <BioYear>2019</BioYear>
-            <FontAwesomeIcon icon={faMicroscope} /> Interned at the RISE (Interactive Media Smart Systems and Emerging Technologies) Research Centre for STEM and Gaming
+            <FontAwesomeIcon icon={faMicroscope} /> Interned at the RISE
+            (Interactive Media Smart Systems and Emerging Technologies) Research
+            Centre for STEM and Gaming
+          </BioSection>
+          <BioSection>
+            <BioYear>2019</BioYear>
+            <FontAwesomeIcon icon={faHiking} /> Completed the Duke of Edinburgh
+            Bronze Certification
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
-            <FontAwesomeIcon icon={faMicroscope} /> Interned (once more!) at the RiseUP Research Centre on Interactive Media Smart Systems and Emerging Technologies &amp; successfully completed the Gaming and Artificial Intelligence Scholars Program, with all requirements passed for graduation
+            <FontAwesomeIcon icon={faMicroscope} /> Interned (once more!) at the
+            RiseUP Research Centre on Interactive Media Smart Systems and
+            Emerging Technologies &amp; successfully completed the Gaming and
+            Artificial Intelligence Scholars Program, with all requirements
+            passed for graduation
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
@@ -390,34 +418,79 @@ const Page = () => {
           <List>
             <ListItem>
               <Link href="https://github.com/SavvyDev06" target="_blank">
-                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoGithub} />}>@SavvyDev06</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="purple"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @SavvyDev06
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://twitter.com/SavvyDev06" target="_blank">
-                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>@SavvyDev06</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="purple"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @SavvyDev06
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://twitter.com/United_We_Code" target="_blank">
-                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>@United_We_Code</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="purple"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @United_We_Code
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://discord.com/users/335413012682899456" target="_blank">
-                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoDiscord} />}>@SavvyDev06#4043</Button>
+              <Link
+                href="https://discord.com/users/335413012682899456"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="purple"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  @SavvyDev06#4043
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://instagram.com/SavvyDev06" target="_blank">
-                <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoInstagram} />}>@SavvyDev06</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="purple"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @SavvyDev06
+                </Button>
               </Link>
             </ListItem>
           </List>
 
-          <SimpleGrid columns={[1,2,2]} gap={6}>
-            <GridItem href="https://www.youtube.com/channel/UCV-cdJV5CzsyqoykTdvDFnQ" title="United We Code" thumbnail={thumbYouTube}>My official YouTube Channel</GridItem>
-            <GridItem href="https://unitedweco.de/degore" title="DeGore" thumbnail={thumbDeGore}>AI image moderation for communities on the Discord Platform</GridItem>
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              href="https://www.youtube.com/channel/UCV-cdJV5CzsyqoykTdvDFnQ"
+              title="United We Code"
+              thumbnail={thumbYouTube}
+            >
+              My official YouTube Channel
+            </GridItem>
+            <GridItem
+              href="https://unitedweco.de/degore"
+              title="DeGore"
+              thumbnail={thumbDeGore}
+            >
+              AI image moderation for communities on the Discord Platform
+            </GridItem>
           </SimpleGrid>
         </Section>
       </Container>
