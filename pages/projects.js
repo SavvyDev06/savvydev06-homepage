@@ -12,13 +12,10 @@ import thumbDeGoreDash from '../public/images/projects/degore-dashboard-thumbnai
 import thumbDankAPI from '../public/images/projects/dank-api-thumbnail.png'
 import thumbQckBoard from '../public/images/projects/qckboard-macro-plus-thumbnail.png'
 
-import HeadsUpToast from '../components/headsUpToast'
-
 const Projects = () => {
   return (
     <Layout>
       <Container>
-        <HeadsUpToast />
         <Heading fontWeight="600" as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
@@ -69,7 +66,8 @@ const Projects = () => {
               title="QckBoard Macro Plus"
               thumbnail={thumbQckBoard}
             >
-              A custom-made macro keypad for enterprise and home use (The PCB was designed from scratch).
+              A custom-made macro keypad for enterprise and home use (The PCB
+              was designed from scratch).
             </ProjectGridItem>
           </Section>
         </SimpleGrid>

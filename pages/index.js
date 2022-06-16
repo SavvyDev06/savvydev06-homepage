@@ -21,7 +21,6 @@ import CursiveHeading from '../components/cursiveHeading'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
-import HeadsUpToast from '../components/headsUpToast'
 import { GridItem } from '../components/grid-item'
 
 import {
@@ -87,7 +86,6 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <HeadsUpToast />
         <Box
           borderRadius="lg"
           bg={useColorModeValue(
