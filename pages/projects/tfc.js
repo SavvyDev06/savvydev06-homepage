@@ -19,7 +19,7 @@ const Work = () => {
           The Five Chapters <Badge>2019</Badge>
         </Title>
         <P>
-          A survival 3Dhorror game experience with photorealistic graphics. The
+          A survival 3D horror game experience with photorealistic graphics. The
           game unfortunately did not end up releasing to the public, but remains
           an impressive graphics tech demo and proof-of-concept.
         </P>
