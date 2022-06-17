@@ -9,7 +9,7 @@ const Work = () => {
     <Layout title="SCP United">
       <Container>
         <Title>
-          SCP United <Badge>2021-2022</Badge>
+          SCP United <Badge>2021</Badge>
         </Title>
         <P>
           A faithful remaster of the SCP Containment Breach game using elements
