@@ -62,7 +62,8 @@ import {
   faCube,
   faAngleDoubleRight,
   faLaptop,
-  faHiking
+  faHiking,
+  faRobot
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -180,6 +181,11 @@ const Page = () => {
           <BioSection>
             <BioYear>2008</BioYear>
             <FontAwesomeIcon icon={faLaptop} /> Started tinkering with a laptop
+          </BioSection>
+          <BioSection>
+            <BioYear>2010</BioYear>
+            <FontAwesomeIcon icon={faRobot} /> Begun creating small robots with
+            LEGO Mindstorms
           </BioSection>
           <BioSection>
             <BioYear>2012</BioYear>
