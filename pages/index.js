@@ -265,6 +265,11 @@ const Page = () => {
             <FontAwesomeIcon icon={faRocket} /> Founded DeGore, and work as a
             lead developer
           </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+            <FontAwesomeIcon icon={faAtom} /> Certified as the first ever STEAM
+            Ambassador in Cyprus
+          </BioSection>
         </Section>
 
         <Section delay={0.3}>
