@@ -224,7 +224,7 @@ const Page = () => {
           <BioSection>
             <BioYear>2018</BioYear>
             <FontAwesomeIcon icon={faLaptopCode} /> Passed ECDL C++ Programming
-            Course with distinction
+            Course &amp; Examinations with distinction
           </BioSection>
           <BioSection>
             <BioYear>2019</BioYear>
