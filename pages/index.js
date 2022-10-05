@@ -63,7 +63,9 @@ import {
   faAngleDoubleRight,
   faLaptop,
   faHiking,
-  faRobot
+  faRobot,
+  faSatelliteDish,
+  faShuttleSpace
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -270,6 +272,11 @@ const Page = () => {
             <FontAwesomeIcon icon={faAtom} /> Certified as the first ever STEAM
             Ambassador in Cyprus
           </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+            <FontAwesomeIcon icon={faSatelliteDish} /> Certified as an Amateur
+            Radio Operator
+          </BioSection>
         </Section>
 
         <Section delay={0.3}>
@@ -327,14 +334,14 @@ const Page = () => {
               <FontAwesomeIcon icon={faN} /> NextJS
               <br />
               <FontAwesomeIcon icon={faAtom} /> Electron
-              <br />
-              <FontAwesomeIcon icon={faVuejs} /> NuxtJS
             </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faGlasses} />{' '}
             <b>
               <u>Learning</u>
             </b>{' '}
             <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faVuejs} /> NuxtJS
+              <br />
               <FontAwesomeIcon icon={faFeather} /> Flutter
             </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faCalendarCheck} />{' '}
@@ -363,15 +370,21 @@ const Page = () => {
               <br />
               <FontAwesomeIcon icon={faLeaf} /> MongoDB
               <br />
-              <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server (more to
-              be added)
+              <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server
+            </ParagraphLeftPadded>
+            <FontAwesomeIcon icon={faGlasses} />{' '}
+            <b>
+              <u>Learning</u>
+            </b>{' '}
+            <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faShapes} /> Redis
             </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faCalendarCheck} />{' '}
             <b>
               <u>Planned to Learn</u>
             </b>{' '}
             <ParagraphLeftPadded>
-              <FontAwesomeIcon icon={faShapes} /> Redis
+              <FontAwesomeIcon icon={faShuttleSpace} /> SurrealDB
             </ParagraphLeftPadded>
           </ParagraphBio>
         </Section>
