@@ -40,12 +40,12 @@ const Projects = () => {
 
           <Section delay={0.2}>
             <ProjectGridItem
-              id="degore-dashboard"
-              title="DeGore Dashboard"
-              thumbnail={thumbDeGoreDash}
+              id="qckboard"
+              title="QckBoard Macro Plus"
+              thumbnail={thumbQckBoard}
             >
-              A sleek and advanced web dashboard to conveniently interface with
-              and configure DeGore.
+              A custom-made macro keypad for enterprise and home use (The PCB
+              was designed from scratch).
             </ProjectGridItem>
           </Section>
 
@@ -62,12 +62,12 @@ const Projects = () => {
 
           <Section delay={0.4}>
             <ProjectGridItem
-              id="qckboard"
-              title="QckBoard Macro Plus"
-              thumbnail={thumbQckBoard}
+              id="degore-dashboard"
+              title="DeGore Dashboard"
+              thumbnail={thumbDeGoreDash}
             >
-              A custom-made macro keypad for enterprise and home use (The PCB
-              was designed from scratch).
+              A sleek and advanced web dashboard to conveniently interface with
+              and configure DeGore.
             </ProjectGridItem>
           </Section>
         </SimpleGrid>

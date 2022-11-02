@@ -51,6 +51,13 @@ const Work = () => {
               Celebrating a year of DeGore <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
+          <ListItem>
+            <Meta>Documentation</Meta>
+            <Link href="https://degore-docs.unitedweco.de" target="_blank">
+              View the documentation and user guide here{' '}
+              <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
         </List>
 
         <ProjectImage
@@ -66,6 +73,19 @@ const Work = () => {
             allowFullScreen
           ></iframe>
         </AspectRatio>
+        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+          <iframe
+            src="https://www.youtube.com/embed/4y470jnDkdo"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </AspectRatio>
+        <ProjectImage
+          src="/images/project-showcase/degore_02.png"
+          alt="A list of just some of DeGore's many offerings"
+        />
       </Container>
     </Layout>
   )
