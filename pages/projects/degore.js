@@ -4,9 +4,10 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio
+  AspectRatio,
+  Button
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraphMain'
 import Layout from '../../components/layouts/article'
@@ -22,6 +23,12 @@ const Work = () => {
           Discord&apos;s most powerful image moderation solution, powered by
           Artificial Intelligence, sophisticated decision-making &amp; hashing
           algorithms and much more.
+        </P>
+        <P>
+          DeGore is currently protecting ~1M users in thousands of communities
+          around the world. Not only does DeGore help prevent users from being
+          exposed to harmful content, but it also protects marginalised groups
+          from targeted attacks.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -56,6 +63,16 @@ const Work = () => {
             <Link href="https://degore-docs.unitedweco.de" target="_blank">
               View the documentation and user guide here{' '}
               <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem mt={2}>
+            <Link
+              href="mailto:invest@unitedweco.de?cc=developer.savvasmica@gmail.com"
+              target="_blank"
+            >
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+                Investor? Shoot us an email.
+              </Button>
             </Link>
           </ListItem>
         </List>
