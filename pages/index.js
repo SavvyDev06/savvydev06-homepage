@@ -103,7 +103,7 @@ const Page = () => {
         >
           <CursiveHeading>Hello,</CursiveHeading>
           <ParagraphHeading style={introStyleObj}>
-            I&apos;m Savvy, a student enterpreneur from Cyprus!
+            I&apos;m Savvy, a student entrepreneur from Cyprus!
           </ParagraphHeading>
         </Box>
 
