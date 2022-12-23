@@ -5,12 +5,14 @@ import {
   List,
   ListItem,
   AspectRatio,
-  Button
+  Button,
+  Box
 } from '@chakra-ui/react'
 import { ExternalLinkIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraphMain'
 import Layout from '../../components/layouts/article'
+import DeGoreDrawer from '../../components/degoreDrawer'
 
 const Work = () => {
   return (
@@ -66,14 +68,22 @@ const Work = () => {
             </Link>
           </ListItem>
           <ListItem mt={2}>
-            <Link
-              href="mailto:invest@unitedweco.de?cc=developer.savvasmica@gmail.com"
-              target="_blank"
-            >
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
-                Investor? Shoot us an email.
-              </Button>
-            </Link>
+            <Box display="flex" alignItems="center">
+              <DeGoreDrawer />
+              <Link
+                href="mailto:invest@unitedweco.de?cc=developer.savvasmica@gmail.com"
+                target="_blank"
+              >
+                <Button
+                  rightIcon={<ChevronRightIcon />}
+                  colorScheme="purple"
+                  ml={2}
+                  size={'sm'}
+                >
+                  Investor? Shoot us an email.
+                </Button>
+              </Link>
+            </Box>
           </ListItem>
         </List>
 
