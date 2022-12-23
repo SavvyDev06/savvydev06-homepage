@@ -58,7 +58,9 @@ function DeGoreDrawer() {
                 src={
                   'https://www.linode.com/wp-content/uploads/2022/12/savvas-agisilaou-s3-e5.png'
                 }
-                alt={'image alt'}
+                alt={
+                  'Thumbnail image - How Linode Supported an AI Image Moderation Bot'
+                }
               />
 
               <Box p="6">
