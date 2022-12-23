@@ -1,6 +1,6 @@
 import { Box, Button, Link, useToast } from '@chakra-ui/react'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
-import { faClock, faPodcast } from '@fortawesome/free-solid-svg-icons'
+import { faPodcast } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
 
