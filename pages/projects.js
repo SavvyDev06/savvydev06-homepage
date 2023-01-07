@@ -11,6 +11,7 @@ import thumbONABLC from '../public/images/projects/onablc-thumbnail.png'
 import thumbDeGoreDash from '../public/images/projects/degore-dashboard-thumbnail.png'
 import thumbDankAPI from '../public/images/projects/dank-api-thumbnail.png'
 import thumbQckBoard from '../public/images/projects/qckboard-macro-plus-thumbnail.png'
+import thumbLinkXR from '../public/images/projects/linkxr-thumbnail.webp'
 
 const Projects = () => {
   return (
@@ -61,6 +62,13 @@ const Projects = () => {
           </Section>
 
           <Section delay={0.4}>
+            <ProjectGridItem id="linkxr" title="LinkXR" thumbnail={thumbLinkXR}>
+              A social site for users to link all their VR, AR and MR accounts
+              in one place.
+            </ProjectGridItem>
+          </Section>
+
+          <Section delay={0.5}>
             <ProjectGridItem
               id="degore-dashboard"
               title="DeGore Dashboard"
@@ -72,7 +80,7 @@ const Projects = () => {
           </Section>
         </SimpleGrid>
 
-        <Section delay={0.5}>
+        <Section delay={0.6}>
           <Divider my={6} />
           <Heading fontWeight="600" as="h3" fontSize={20} mb={4}>
             Collaborations
@@ -80,7 +88,7 @@ const Projects = () => {
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.6}>
+          <Section delay={0.7}>
             <ProjectGridItem id="scpu" title="SCP United" thumbnail={thumbSCPU}>
               A faithful remaster of the SCP Containment Breach game using
               elements and systems from the cancelled SCP Unity game.
@@ -88,7 +96,7 @@ const Projects = () => {
           </Section>
         </SimpleGrid>
 
-        <Section delay={0.7}>
+        <Section delay={0.8}>
           <Divider my={6} />
           <Heading fontWeight="600" as="h3" fontSize={20} mb={4}>
             Past Projects
@@ -96,7 +104,7 @@ const Projects = () => {
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.8}>
+          <Section delay={0.9}>
             <ProjectGridItem
               id="solarsystem"
               title="Our Solar System"
@@ -106,7 +114,7 @@ const Projects = () => {
             </ProjectGridItem>
           </Section>
 
-          <Section delay={0.9}>
+          <Section delay={0.1}>
             <ProjectGridItem
               id="onablc"
               title="One Night at Baldi's Literature Club"
