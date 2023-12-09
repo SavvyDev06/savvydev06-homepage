@@ -24,7 +24,7 @@ const Work = () => {
           Augmented Reality and Mixed Reality accounts in one centralised,
           customisable, and public profile page that can be shared in one click.
           This way, you can stay connected with your friends, no matter where
-          you met through a custom profile link that's unique to you.
+          you met through a custom profile link that&apos;s unique to you.
         </P>
         <List ml={4} my={4}>
           <ListItem>
