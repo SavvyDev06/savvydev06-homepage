@@ -1,5 +1,13 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Box,
+  Button
+} from '@chakra-ui/react'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraphMain'
 import Layout from '../../components/layouts/article'
@@ -15,7 +23,8 @@ const Work = () => {
           A social site that allows users to link all their Virtual Reality,
           Augmented Reality and Mixed Reality accounts in one centralised,
           customisable, and public profile page that can be shared in one click.
-          The site is in active beta development.
+          This way, you can stay connected with your friends, no matter where
+          you met through a custom profile link that's unique to you.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -26,36 +35,45 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
-            <span>Chrome, Firefox, Safari, Opera, PWA, and many more</span>
+            <span>Available on all web browsers for Desktop & Mobile</span>
           </ListItem>
           <ListItem>
             <Meta>Tech Stack</Meta>
             <span>React, NextJS, JavaScript, Firebase, MongoDB, Vercel</span>
           </ListItem>
-          <ListItem>
-            <Meta>Please Note</Meta>
-            <span>
-              The site is in rapid development and will open to the public once
-              the database schema is finalised.
-            </span>
+          <ListItem mt={2}>
+            <Box display="flex" alignItems="center">
+              <Link
+                href="https://linkxr.one/profile/SavvyDev06"
+                target="_blank"
+              >
+                <Button
+                  rightIcon={<ChevronRightIcon />}
+                  colorScheme="purple"
+                  size={'sm'}
+                >
+                  View an example profile
+                </Button>
+              </Link>
+            </Box>
           </ListItem>
         </List>
 
         <ProjectImage
-          src="/images/project-showcase/linkxr_01.webp"
-          alt="The coming soon dashboard page"
+          src="https://linkxr.b-cdn.net/promo_images/ProfilePage.webp"
+          alt="Savvy's profile page on LinkXR"
         />
         <ProjectImage
-          src="/images/project-showcase/linkxr_02.webp"
-          alt="The dashboard site - a work in progress"
+          src="https://linkxr.b-cdn.net/promo_images/ProfilesPage_Main.webp"
+          alt="The Public Profiles page on LinkXR"
         />
         <ProjectImage
-          src="/images/project-showcase/linkxr_03.webp"
-          alt="The dashboard site - a work in progress"
+          src="https://linkxr.b-cdn.net/promo_images/DashboardDemo.webp"
+          alt="LinkXR's Profile Dashboard page"
         />
         <ProjectImage
-          src="/images/project-showcase/linkxr_04.webp"
-          alt="The dashboard site - a work in progress"
+          src="https://linkxr.b-cdn.net/promo_images/LoginPage.webp"
+          alt="The login page for LinkXR"
         />
       </Container>
     </Layout>

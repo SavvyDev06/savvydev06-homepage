@@ -66,7 +66,9 @@ import {
   faHiking,
   faRobot,
   faSatelliteDish,
-  faShuttleSpace
+  faShuttleSpace,
+  faGraduationCap,
+  faCrosshairs
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -278,6 +280,21 @@ const Page = () => {
             <BioYear>2022</BioYear>
             <FontAwesomeIcon icon={faSatelliteDish} /> Certified as an Amateur
             Radio Operator
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The Junior
+            & Senior Highschool
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The Junior
+            & Senior School
+          </BioSection>
+          <BioSection>
+            <BioYear>2023-present</BioYear>
+            <FontAwesomeIcon icon={faCrosshairs} /> Enlisted into the Cypriot
+            Army, completing service mid-2024
           </BioSection>
         </Section>
 

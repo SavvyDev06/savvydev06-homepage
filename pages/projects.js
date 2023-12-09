@@ -2,7 +2,6 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
-
 import thumbDeGore from '../public/images/projects/degore-thumbnail.png'
 import thumbSCPU from '../public/images/projects/scpu-thumbnail.png'
 import thumbTFC from '../public/images/projects/tfc-thumbnail.png'
@@ -24,18 +23,15 @@ const Projects = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <ProjectGridItem id="degore" title="DeGore" thumbnail={thumbDeGore}>
-              The most advanced AI-Powered image moderation solution for
-              communities on the Discord Platform
+              The most advanced AI-Powered image moderation solution for online
+              communities, protecting over 1M users
             </ProjectGridItem>
           </Section>
 
           <Section delay={0.1}>
-            <ProjectGridItem
-              id="tfc"
-              title="The Five Chapters"
-              thumbnail={thumbTFC}
-            >
-              An immersive 3D horror experience.
+            <ProjectGridItem id="linkxr" title="LinkXR" thumbnail={thumbLinkXR}>
+              A social site for VR, AR and MR users to connect their accounts
+              across social platforms in a single, unified profile
             </ProjectGridItem>
           </Section>
 
@@ -45,26 +41,29 @@ const Projects = () => {
               title="QckBoard Macro Plus"
               thumbnail={thumbQckBoard}
             >
-              A custom-made macro keypad for enterprise and home use (The PCB
-              was designed from scratch).
+              A custom-made macro keypad for enterprise and home use (featuring
+              a custom-made PCB)
             </ProjectGridItem>
           </Section>
 
           <Section delay={0.3}>
             <ProjectGridItem
-              id="dankpods-api"
-              title="DankPods API"
-              thumbnail={thumbDankAPI}
+              id="tfc"
+              title="The Five Chapters"
+              thumbnail={thumbTFC}
             >
-              An Express REST API used to get random funny quotes from dankpods
-              videos.
+              An immersive 3D horror experience
             </ProjectGridItem>
           </Section>
 
           <Section delay={0.4}>
-            <ProjectGridItem id="linkxr" title="LinkXR" thumbnail={thumbLinkXR}>
-              A social site for users to link all their VR, AR and MR accounts
-              in one place.
+            <ProjectGridItem
+              id="dankpods-api"
+              title="DankPods API"
+              thumbnail={thumbDankAPI}
+            >
+              An Express REST API used to get random comedic quotes from
+              dankpods videos
             </ProjectGridItem>
           </Section>
 
@@ -75,7 +74,7 @@ const Projects = () => {
               thumbnail={thumbDeGoreDash}
             >
               A sleek and advanced web dashboard to conveniently interface with
-              and configure DeGore.
+              and configure DeGore
             </ProjectGridItem>
           </Section>
         </SimpleGrid>
@@ -91,7 +90,7 @@ const Projects = () => {
           <Section delay={0.7}>
             <ProjectGridItem id="scpu" title="SCP United" thumbnail={thumbSCPU}>
               A faithful remaster of the SCP Containment Breach game using
-              elements and systems from the cancelled SCP Unity game.
+              elements and systems from the cancelled SCP Unity game
             </ProjectGridItem>
           </Section>
         </SimpleGrid>
@@ -110,7 +109,7 @@ const Projects = () => {
               title="Our Solar System"
               thumbnail={thumbSolarSystem}
             >
-              An app designed to teach you all about our Solar System.
+              An app designed to teach you all about our Solar System
             </ProjectGridItem>
           </Section>
 
@@ -121,7 +120,7 @@ const Projects = () => {
               thumbnail={thumbONABLC}
             >
               Combining Baldi&apos;s Basics, Doki Doki Literature Club, and Five
-              Nights At Freddy&apos;s into one single-player horror experience.
+              Nights At Freddy&apos;s into one single-player horror experience
             </ProjectGridItem>
           </Section>
         </SimpleGrid>
