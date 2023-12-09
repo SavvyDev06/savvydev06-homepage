@@ -60,19 +60,19 @@ const Work = () => {
         </List>
 
         <ProjectImage
-          src="https://linkxr.b-cdn.net/promo_images/ProfilePage.webp"
+          src="https://cdn.linkxr.one/promo_images/ProfilePage.webp"
           alt="Savvy's profile page on LinkXR"
         />
         <ProjectImage
-          src="https://linkxr.b-cdn.net/promo_images/ProfilesPage_Main.webp"
+          src="https://cdn.linkxr.one/promo_images/ProfilesPage_Main.webp"
           alt="The Public Profiles page on LinkXR"
         />
         <ProjectImage
-          src="https://linkxr.b-cdn.net/promo_images/DashboardDemo.webp"
+          src="https://cdn.linkxr.one/promo_images/DashboardDemo.webp"
           alt="LinkXR's Profile Dashboard page"
         />
         <ProjectImage
-          src="https://linkxr.b-cdn.net/promo_images/LoginPage.webp"
+          src="https://cdn.linkxr.one/promo_images/LoginPage.webp"
           alt="The login page for LinkXR"
         />
       </Container>
