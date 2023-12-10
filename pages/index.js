@@ -288,8 +288,8 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2023-present</BioYear>
-            <FontAwesomeIcon icon={faCrosshairs} /> Enlisted into the Cypriot
-            Army, completing service Summer 2024
+            <FontAwesomeIcon icon={faCrosshairs} /> Serving the Cypriot Army,
+            completing service summer 2024
           </BioSection>
         </Section>
 
