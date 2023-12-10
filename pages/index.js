@@ -284,17 +284,12 @@ const Page = () => {
           <BioSection>
             <BioYear>2023</BioYear>
             <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The Junior
-            & Senior Highschool
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The Junior
             & Senior School
           </BioSection>
           <BioSection>
             <BioYear>2023-present</BioYear>
             <FontAwesomeIcon icon={faCrosshairs} /> Enlisted into the Cypriot
-            Army, completing service mid-2024
+            Army, completing service Summer 2024
           </BioSection>
         </Section>
 
