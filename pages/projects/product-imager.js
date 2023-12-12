@@ -21,19 +21,19 @@ const Work = () => {
         </Title>
         <P>
           ProductImager automates the tedious and time-consuming process of
-          manually sourcing & linking product images to product catalogues
-          provided. Web store managers can effortlessly upload catalogues in CSV
-          format, and the program dynamically adds image links by intelligently
-          matching product names or serial numbers. Enhancing efficiency for
-          countless businesses, ProductImager simplifies the task of creating
-          visually appealing product listings.
+          manually sourcing & linking product images to product catalogues. Web
+          store managers can effortlessly upload catalogues in CSV format, and
+          the program dynamically adds image links by intelligently matching
+          product names or serial numbers. Enhancing efficiency for countless
+          businesses, ProductImager simplifies the task of creating visually
+          appealing product listings.
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Availability</Meta>
             <span>
               In private beta for an upcoming CY-based business, Tails & Trails.
-              Limited availability for business owners interested in the
+              Limited availability only for business owners interested in the
               service.
             </span>
           </ListItem>
