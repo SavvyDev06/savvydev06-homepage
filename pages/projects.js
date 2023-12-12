@@ -11,6 +11,7 @@ import thumbDeGoreDash from '../public/images/projects/degore-dashboard-thumbnai
 import thumbDankAPI from '../public/images/projects/dank-api-thumbnail.png'
 import thumbQckBoard from '../public/images/projects/qckboard-macro-plus-thumbnail.png'
 import thumbLinkXR from '../public/images/projects/linkxr-thumbnail.webp'
+import thumbProductImager from '../public/images/projects/product-imager-thumbnail.webp'
 
 const Projects = () => {
   return (
@@ -58,6 +59,18 @@ const Projects = () => {
 
           <Section delay={0.4}>
             <ProjectGridItem
+              id="product-imager"
+              title="ProductImager"
+              thumbnail={thumbProductImager}
+            >
+              Seamlessly add images to products on your web store without the
+              hassle of individually sourcing, downloading, and uploading -
+              automated for efficiency.
+            </ProjectGridItem>
+          </Section>
+
+          <Section delay={0.5}>
+            <ProjectGridItem
               id="dankpods-api"
               title="DankPods API"
               thumbnail={thumbDankAPI}
@@ -67,7 +80,7 @@ const Projects = () => {
             </ProjectGridItem>
           </Section>
 
-          <Section delay={0.5}>
+          <Section delay={0.6}>
             <ProjectGridItem
               id="degore-dashboard"
               title="DeGore Dashboard"
