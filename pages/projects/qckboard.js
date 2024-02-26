@@ -66,6 +66,10 @@ const Work = () => {
           alt="The feature picture of the board"
         />
         <ProjectImage
+          src="/images/project-showcase/qckboard_08.webp"
+          alt="Revision 2 of the board, available for purchase soon"
+        />
+        <ProjectImage
           src="/images/project-showcase/qckboard_02.png"
           alt="A picture of the board with the keycaps removed"
         />
