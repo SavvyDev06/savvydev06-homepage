@@ -68,7 +68,8 @@ import {
   faSatelliteDish,
   faShuttleSpace,
   faGraduationCap,
-  faCrosshairs
+  faCrosshairs,
+  faUniversity
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -152,6 +153,10 @@ const Page = () => {
             Some of Savvy’s most notable software projects include{' '}
             <NextLink href="/projects/degore" scroll={false} passHref>
               <Link>DeGore</Link>
+            </NextLink>
+            ,{' '}
+            <NextLink href="/projects/linkxr" scroll={false} passHref>
+              <Link>LinkXR</Link>
             </NextLink>
             ,{' '}
             <NextLink href="/projects/tfc" scroll={false} passHref>
@@ -287,9 +292,14 @@ const Page = () => {
             & Senior School
           </BioSection>
           <BioSection>
-            <BioYear>2023-present</BioYear>
-            <FontAwesomeIcon icon={faCrosshairs} /> Serving the Cypriot Army,
-            completing service summer 2024
+            <BioYear>2023-2024</BioYear>
+            <FontAwesomeIcon icon={faCrosshairs} /> Served in the Cypriot Army
+            for 14 months at a special forces unit
+          </BioSection>
+          <BioSection>
+            <BioYear>Up Next:</BioYear>
+            <FontAwesomeIcon icon={faUniversity} /> Will be studying Computer
+            Science at Newcastle University
           </BioSection>
         </Section>
 
