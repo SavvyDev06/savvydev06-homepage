@@ -297,9 +297,9 @@ const Page = () => {
             for 14 months at a special forces unit
           </BioSection>
           <BioSection>
-            <BioYear>Up Next:</BioYear>
-            <FontAwesomeIcon icon={faUniversity} /> Will be studying Computer
-            Science at Newcastle University
+            <BioYear>2024-present</BioYear>
+            <FontAwesomeIcon icon={faUniversity} /> Studying Computer Science at
+            Newcastle University
           </BioSection>
         </Section>
 
