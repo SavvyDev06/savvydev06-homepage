@@ -32,7 +32,7 @@ const Posts = () => (
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Celebrating a year of DeGore"
@@ -47,7 +47,7 @@ const Posts = () => (
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.5}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Discord: A Developer's Perspective"
@@ -62,7 +62,7 @@ const Posts = () => (
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.7}>
         <SimpleGrid columns={1} gap={6}>
           <GridItem
             title="Podcast Feature: Akamai Cloud (Formerly Linode) Craft of Code"
