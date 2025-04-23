@@ -22,7 +22,7 @@ const Posts = () => (
           <GridItem
             title="Celebrating Four Triumphant Years of DeGore"
             thumbnail={thumbDeGoreFourYears}
-            href="https://blog.unitedweco.de/celebrating-a-year-of-degore/"
+            href="https://blog.unitedweco.de/four-years-of-degore/"
           />
           <GridItem
             title="DeGore | AI-Powered Image Moderation for Communities Worldwide"
@@ -42,7 +42,7 @@ const Posts = () => (
           <GridItem
             title="DeGore | Complete Quickstart Guide & Tutorial"
             thumbnail={thumbDeGoreTutorial}
-            href="https://youtu.be/40D1wtBdxyQ"
+            href="https://youtu.be/4y470jnDkdo"
           />
         </SimpleGrid>
       </Section>

@@ -29,12 +29,7 @@ import { BioSection, BioYear } from '../components/bio'
 import { GridItem } from '../components/grid-item'
 import HeadsUpToast from '../components/headsUpToast'
 
-import {
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoDiscord
-} from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbDeGore from '../public/images/projects/degore-thumbnail.png'
@@ -207,7 +202,7 @@ const Page = () => {
             Bio
           </Heading>
           <ParagraphMain>
-            Select a section to learn more about Savvas's achievements
+            Select a section to learn more about Savvas&apos;s achievements
           </ParagraphMain>
           <Accordion defaultIndex={[3]} mt={2}>
             {/* Early Life Panel (2004-2012) */}
