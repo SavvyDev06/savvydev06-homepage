@@ -10,7 +10,12 @@ import {
   ListItem,
   Icon,
   Button,
-  useColorModeValue
+  useColorModeValue,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionIcon,
+  AccordionPanel
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import ParagraphMain from '../components/paragraphMain'
@@ -69,7 +74,12 @@ import {
   faShuttleSpace,
   faGraduationCap,
   faCrosshairs,
-  faUniversity
+  faUniversity,
+  faChartGantt,
+  faDroplet,
+  faDragon,
+  faShareNodes,
+  faF
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -82,13 +92,20 @@ import {
   faRust,
   faGolang,
   faDocker,
-  faUnity
+  faUnity,
+  faDiscord
 } from '@fortawesome/free-brands-svg-icons'
+import { faJava } from '@fortawesome/free-brands-svg-icons/faJava'
 
 const Page = () => {
   const introStyleObj = {
     color: 'white'
   }
+
+  const bioSelectBG = useColorModeValue(
+    'linear-gradient(45deg, #73C6E8, #A5FF8D)',
+    'linear-gradient(45deg, #6C28C4, #73C6E8)'
+  )
 
   return (
     <Layout>
@@ -116,7 +133,8 @@ const Page = () => {
               Savvas M. Agisilaou
             </Heading>
             <ParagraphHeading>
-              Digital Creator ( Software &amp; Game Developer / Music Producer )
+              Software &amp; Game Developer, Amateur Radio Operator, Music
+              Producer
             </ParagraphHeading>
           </Box>
           <Box
@@ -145,11 +163,14 @@ const Page = () => {
             Savvas – better known as Savvy – is a full-stack software developer
             with a passion for creating useful software, to help improve our
             daily lives through the power of code.
-            <br />
+          </ParagraphMain>
+          <ParagraphMain>
             He often finds himself engineering hardware as well, such as printed
             circuit boards, 3D Prints / CAD, and regularly tinkers with Arduino
             and Raspberry Pi boards to make all sorts of cool stuff.
             <br />
+          </ParagraphMain>
+          <ParagraphMain style={{ fontWeight: '600' }}>
             Some of Savvy’s most notable software projects include{' '}
             <NextLink href="/projects/degore" scroll={false} passHref>
               <Link>DeGore</Link>
@@ -185,122 +206,193 @@ const Page = () => {
           <Heading fontWeight="600" as="h3" variant="section-title">
             Bio
           </Heading>
-          <BioSection>
-            <BioYear>2004</BioYear>
-            <FontAwesomeIcon icon={faCakeCandles} /> Born in Nicosia, Cyprus.
-          </BioSection>
-          <BioSection>
-            <BioYear>2008</BioYear>
-            <FontAwesomeIcon icon={faLaptop} /> Started tinkering with a laptop
-          </BioSection>
-          <BioSection>
-            <BioYear>2010</BioYear>
-            <FontAwesomeIcon icon={faRobot} /> Begun creating small robots with
-            LEGO Mindstorms
-          </BioSection>
-          <BioSection>
-            <BioYear>2012</BioYear>
-            <FontAwesomeIcon icon={faLaptopCode} /> Learnt to &apos;code&apos;
-            with Scratch on a Raspberry Pi
-          </BioSection>
-          <BioSection>
-            <BioYear>2015</BioYear>
-            <FontAwesomeIcon icon={faPython} /> Learnt the basics of Python, and
-            tinkered with other languages
-          </BioSection>
-          <BioSection>
-            <BioYear>2017</BioYear>
-            <FontAwesomeIcon icon={faUnity} /> Started creating games with the
-            Unity Game Engine (v2017.x)
-          </BioSection>
-          <BioSection>
-            <BioYear>2018</BioYear>
-            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a
-            fast line following car for the Robotex 2018 Arduino Line following
-            competition (LlamasInPyjamas Team)
-          </BioSection>
-          <BioSection>
-            <BioYear>2018</BioYear>
-            <FontAwesomeIcon icon={faTrophy} /> Official Winner of the Exclusive
-            NASA &amp; CSEO Cyprus Space Apps Challenge 2018 (ASRocket Team) -
-            Certificate Hand-Signed by{' '}
-            <Link
-              href="https://en.wikipedia.org/wiki/Anna_Lee_Fisher"
-              target="_blank"
-            >
-              Anna Lee Fisher (astronaut)
-            </Link>
-            !
-          </BioSection>
-          <BioSection>
-            <BioYear>2018</BioYear>
-            <FontAwesomeIcon icon={faLaptopCode} /> Passed ECDL C++ Programming
-            Course &amp; Examinations with distinction
-          </BioSection>
-          <BioSection>
-            <BioYear>2019</BioYear>
-            <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp; Programmed a
-            new speedy line following car for the Robotex 2019 Arduino Line
-            following competition (FastAndFurious Team)
-          </BioSection>
-          <BioSection>
-            <BioYear>2019</BioYear>
-            <FontAwesomeIcon icon={faMicroscope} /> Interned at the RISE
-            (Interactive Media Smart Systems and Emerging Technologies) Research
-            Centre for STEM and Gaming
-          </BioSection>
-          <BioSection>
-            <BioYear>2019</BioYear>
-            <FontAwesomeIcon icon={faHiking} /> Completed the Duke of Edinburgh
-            Bronze Certification
-          </BioSection>
-          <BioSection>
-            <BioYear>2020</BioYear>
-            <FontAwesomeIcon icon={faMicroscope} /> Interned (once more!) at the
-            RiseUP Research Centre on Interactive Media Smart Systems and
-            Emerging Technologies &amp; successfully completed the Gaming and
-            Artificial Intelligence Scholars Program, with all requirements
-            passed for graduation
-          </BioSection>
-          <BioSection>
-            <BioYear>2021</BioYear>
-            <FontAwesomeIcon icon={faMusic} /> Passed Grade 5 ABRSM Music Theory
-          </BioSection>
-          <BioSection>
-            <BioYear>2021-present</BioYear>
-            <FontAwesomeIcon icon={faRightToBracket} /> Joined the team at SCP
-            United as a programmer
-          </BioSection>
-          <BioSection>
-            <BioYear>2021-present</BioYear>
-            <FontAwesomeIcon icon={faRocket} /> Founded DeGore, and work as a
-            lead developer
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            <FontAwesomeIcon icon={faAtom} /> Certified as the first ever STEAM
-            Ambassador in Cyprus
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            <FontAwesomeIcon icon={faSatelliteDish} /> Certified as an Amateur
-            Radio Operator
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The Junior
-            & Senior School
-          </BioSection>
-          <BioSection>
-            <BioYear>2023-2024</BioYear>
-            <FontAwesomeIcon icon={faCrosshairs} /> Served in the Cypriot Army
-            for 14 months at a special forces unit
-          </BioSection>
-          <BioSection>
-            <BioYear>2024-present</BioYear>
-            <FontAwesomeIcon icon={faUniversity} /> Studying Computer Science at
-            Newcastle University
-          </BioSection>
+          <ParagraphMain>
+            Select a section to learn more about Savvas's achievements
+          </ParagraphMain>
+          <Accordion defaultIndex={[3]} mt={2}>
+            {/* Early Life Panel (2004-2012) */}
+            <AccordionItem>
+              <Heading as="h4">
+                <AccordionButton
+                  _expanded={{ bg: bioSelectBG, fontWeight: 'semibold' }}
+                >
+                  <Box as="span" flex="1" textAlign={'left'}>
+                    Early Life (2004-2012)
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </Heading>
+              <AccordionPanel pb={4}>
+                <BioSection>
+                  <BioYear>2004</BioYear>
+                  <FontAwesomeIcon icon={faCakeCandles} /> Born in Nicosia,
+                  Cyprus.
+                </BioSection>
+                <BioSection>
+                  <BioYear>2008</BioYear>
+                  <FontAwesomeIcon icon={faLaptop} /> Started tinkering with a
+                  laptop
+                </BioSection>
+                <BioSection>
+                  <BioYear>2010</BioYear>
+                  <FontAwesomeIcon icon={faRobot} /> Begun creating small robots
+                  with LEGO Mindstorms
+                </BioSection>
+                <BioSection>
+                  <BioYear>2012</BioYear>
+                  <FontAwesomeIcon icon={faLaptopCode} /> Learnt to
+                  &apos;code&apos; with Scratch on a Raspberry Pi
+                </BioSection>
+              </AccordionPanel>
+            </AccordionItem>
+
+            {/* Going Further with NASA (2015-2018) */}
+            <AccordionItem>
+              <Heading as="h4">
+                <AccordionButton
+                  _expanded={{ bg: bioSelectBG, fontWeight: 'semibold' }}
+                >
+                  <Box as="span" flex="1" textAlign={'left'}>
+                    Going Further with NASA (2015-2018)
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </Heading>
+              <AccordionPanel pb={4}>
+                <BioSection>
+                  <BioYear>2015</BioYear>
+                  <FontAwesomeIcon icon={faPython} /> Learnt the basics of
+                  Python, and tinkered with other languages
+                </BioSection>
+                <BioSection>
+                  <BioYear>2017</BioYear>
+                  <FontAwesomeIcon icon={faUnity} /> Started creating games with
+                  the Unity Game Engine (v2017.x)
+                </BioSection>
+                <BioSection>
+                  <BioYear>2018</BioYear>
+                  <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp;
+                  Programmed a fast line following car for the Robotex 2018
+                  Arduino Line following competition (LlamasInPyjamas Team)
+                </BioSection>
+                <BioSection>
+                  <BioYear>2018</BioYear>
+                  <FontAwesomeIcon icon={faTrophy} /> Official Winner of the
+                  Exclusive NASA &amp; CSEO Cyprus Space Apps Challenge 2018
+                  (ASRocket Team) - Certificate Hand-Signed by{' '}
+                  <Link
+                    href="https://en.wikipedia.org/wiki/Anna_Lee_Fisher"
+                    target="_blank"
+                  >
+                    Anna Lee Fisher (astronaut)
+                  </Link>
+                  !
+                </BioSection>
+                <BioSection>
+                  <BioYear>2018</BioYear>
+                  <FontAwesomeIcon icon={faLaptopCode} /> Passed ECDL C++
+                  Programming Course &amp; Examinations with distinction
+                </BioSection>
+              </AccordionPanel>
+            </AccordionItem>
+
+            {/* Internships & Research (2019-2021) */}
+            <AccordionItem>
+              <Heading as="h4">
+                <AccordionButton
+                  _expanded={{ bg: bioSelectBG, fontWeight: 'semibold' }}
+                >
+                  <Box as="span" flex="1" textAlign={'left'}>
+                    Internships & Research (2019-2021)
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </Heading>
+              <AccordionPanel pb={4}>
+                <BioSection>
+                  <BioYear>2019</BioYear>
+                  <FontAwesomeIcon icon={faMicrochip} /> Engineered &amp;
+                  Programmed a new speedy line following car for the Robotex
+                  2019 Arduino Line following competition (FastAndFurious Team)
+                </BioSection>
+                <BioSection>
+                  <BioYear>2019</BioYear>
+                  <FontAwesomeIcon icon={faMicroscope} /> Interned at the RISE
+                  (Interactive Media Smart Systems and Emerging Technologies)
+                  Research Centre for STEM and Gaming
+                </BioSection>
+                <BioSection>
+                  <BioYear>2019</BioYear>
+                  <FontAwesomeIcon icon={faHiking} /> Completed the Duke of
+                  Edinburgh Bronze Certification
+                </BioSection>
+                <BioSection>
+                  <BioYear>2020</BioYear>
+                  <FontAwesomeIcon icon={faMicroscope} /> Interned (once more!)
+                  at the RiseUP Research Centre on Interactive Media Smart
+                  Systems and Emerging Technologies &amp; successfully completed
+                  the Gaming and Artificial Intelligence Scholars Program, with
+                  all requirements passed for graduation
+                </BioSection>
+                <BioSection>
+                  <BioYear>2021</BioYear>
+                  <FontAwesomeIcon icon={faMusic} /> Passed Grade 5 ABRSM Music
+                  Theory
+                </BioSection>
+              </AccordionPanel>
+            </AccordionItem>
+
+            {/* Entrepreneurship & University (2021-Present) */}
+            <AccordionItem>
+              <Heading as="h4">
+                <AccordionButton
+                  _expanded={{ bg: bioSelectBG, fontWeight: 'semibold' }}
+                >
+                  <Box as="span" flex="1" textAlign={'left'}>
+                    Entrepreneurship & University (2021-Present)
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </Heading>
+              <AccordionPanel pb={4}>
+                <BioSection>
+                  <BioYear>2021-present</BioYear>
+                  <FontAwesomeIcon icon={faRightToBracket} /> Joined the game
+                  development team at SCP United as a programmer
+                </BioSection>
+                <BioSection>
+                  <BioYear>2021-present</BioYear>
+                  <FontAwesomeIcon icon={faRocket} /> Founded DeGore, an AI
+                  Research startup company
+                </BioSection>
+                <BioSection>
+                  <BioYear>2022</BioYear>
+                  <FontAwesomeIcon icon={faAtom} /> Certified as the first ever
+                  STEAM Ambassador in Cyprus
+                </BioSection>
+                <BioSection>
+                  <BioYear>2022</BioYear>
+                  <FontAwesomeIcon icon={faSatelliteDish} /> Certified as an
+                  Amateur Radio Operator
+                </BioSection>
+                <BioSection>
+                  <BioYear>2023</BioYear>
+                  <FontAwesomeIcon icon={faGraduationCap} /> Graduated from The
+                  Junior & Senior School
+                </BioSection>
+                <BioSection>
+                  <BioYear>2023-2024</BioYear>
+                  <FontAwesomeIcon icon={faCrosshairs} /> Served in the Cypriot
+                  Army for 14 months at a special forces unit
+                </BioSection>
+                <BioSection>
+                  <BioYear>2024-present</BioYear>
+                  <FontAwesomeIcon icon={faUniversity} /> Studying Computer
+                  Science at Newcastle University
+                </BioSection>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </Section>
 
         <Section delay={0.3}>
@@ -313,15 +405,18 @@ const Page = () => {
               <u>Knowledgeable</u>
             </b>
             <ParagraphLeftPadded>
-              <FontAwesomeIcon icon={faJsSquare} /> JavaScript
-              <br />
-              <FontAwesomeIcon icon={faGears} /> TypeScript
-              <br />
-              <FontAwesomeIcon icon={faC} /> C++
+              <FontAwesomeIcon icon={faC} /> C++{' '}
+              <b>(ECDL Certified - Expert Level, with Distinction)</b>
               <br />
               <FontAwesomeIcon icon={faHashtag} /> C# (dotnet)
               <br />
               <FontAwesomeIcon icon={faPython} /> Python
+              <br />
+              <FontAwesomeIcon icon={faJava} /> Java
+              <br />
+              <FontAwesomeIcon icon={faJsSquare} /> JavaScript
+              <br />
+              <FontAwesomeIcon icon={faGears} /> TypeScript
               <br />
               <FontAwesomeIcon icon={faHtml5} /> HTML&amp;CSS
             </ParagraphLeftPadded>
@@ -329,16 +424,21 @@ const Page = () => {
             <b>
               <u>Learning</u>
             </b>{' '}
-            <ParagraphMain>
-              <FontAwesomeIcon icon={faGears} /> TypeScript <br />
-            </ParagraphMain>
+            <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faC} /> C{' '}
+              <b>(Proficient in fundamentals, growing experience)</b>
+              <br />
+              <FontAwesomeIcon icon={faGolang} /> Go
+              <br />
+            </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faCalendarCheck} />{' '}
             <b>
               <u>Planned to Learn</u>
             </b>{' '}
             <ParagraphLeftPadded>
-              <FontAwesomeIcon icon={faRust} /> Rust <br />
-              <FontAwesomeIcon icon={faGolang} /> Go
+              <FontAwesomeIcon icon={faF} /> Fortran
+              <br />
+              <FontAwesomeIcon icon={faRust} /> Rust
             </ParagraphLeftPadded>
           </ParagraphBio>
         </Section>
@@ -353,6 +453,10 @@ const Page = () => {
               <u>Knowledgeable</u>
             </b>
             <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faChartGantt} /> TensorFlow
+              <br />
+              <FontAwesomeIcon icon={faDroplet} /> PyTorch
+              <br />
               <FontAwesomeIcon icon={faReact} /> React
               <br />
               <FontAwesomeIcon icon={faN} /> NextJS
@@ -364,17 +468,19 @@ const Page = () => {
               <u>Learning</u>
             </b>{' '}
             <ParagraphLeftPadded>
-              <FontAwesomeIcon icon={faVuejs} /> NuxtJS
+              <FontAwesomeIcon icon={faDragon} /> Wails
               <br />
-              <FontAwesomeIcon icon={faFeather} /> Flutter
+              <FontAwesomeIcon icon={faVuejs} /> NuxtJS
             </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faCalendarCheck} />{' '}
             <b>
               <u>Planned to Learn</u>
             </b>{' '}
-            <ParagraphMain>
+            <ParagraphLeftPadded>
               <FontAwesomeIcon icon={faMicrosoft} /> Xamarin
-            </ParagraphMain>
+              <br />
+              <FontAwesomeIcon icon={faFeather} /> Flutter
+            </ParagraphLeftPadded>
           </ParagraphBio>
         </Section>
 
@@ -408,6 +514,8 @@ const Page = () => {
               <u>Planned to Learn</u>
             </b>{' '}
             <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faMicrochip} /> Verilog (FPGAs)
+              <br />
               <FontAwesomeIcon icon={faShuttleSpace} /> SurrealDB
             </ParagraphLeftPadded>
           </ParagraphBio>
@@ -423,6 +531,12 @@ const Page = () => {
               <u>Knowledgeable</u>
             </b>
             <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faMicrosoft} /> Visual Studio &amp; VS Code
+              <br />
+              <FontAwesomeIcon icon={faCube} /> JetBrains Software Suite
+              <br />
+              <FontAwesomeIcon icon={faShareNodes} /> EasyEDA (PCB Design)
+              <br />
               <FontAwesomeIcon icon={faCarrot} /> FL Studio
               <br />
               <FontAwesomeIcon icon={faMusic} /> Ableton Live
@@ -430,10 +544,6 @@ const Page = () => {
               <FontAwesomeIcon icon={faClapperboard} /> Adobe Premiere Pro
               <br />
               <FontAwesomeIcon icon={faMicrophoneAlt} /> Adobe Audition
-              <br />
-              <FontAwesomeIcon icon={faMicrosoft} /> Visual Studio &amp; VS Code
-              <br />
-              <FontAwesomeIcon icon={faCube} /> JetBrains Rider
               <br />
               <FontAwesomeIcon icon={faAngleDoubleRight} /> ...and much more!
             </ParagraphLeftPadded>
@@ -503,9 +613,9 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme="purple"
-                  leftIcon={<Icon as={IoLogoDiscord} />}
+                  leftIcon={<FontAwesomeIcon icon={faDiscord} size="sm" />}
                 >
-                  @SavvyDev06#4043
+                  @SavvyDev
                 </Button>
               </Link>
             </ListItem>
