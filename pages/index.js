@@ -74,7 +74,9 @@ import {
   faDroplet,
   faDragon,
   faShareNodes,
-  faF
+  faF,
+  faServer,
+  faChalkboardTeacher
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -358,7 +360,8 @@ const Page = () => {
                 <BioSection>
                   <BioYear>2021-present</BioYear>
                   <FontAwesomeIcon icon={faRocket} /> Founded DeGore, an AI
-                  Research startup company
+                  Research startup company protecting over a million users
+                  worldwide
                 </BioSection>
                 <BioSection>
                   <BioYear>2022</BioYear>
@@ -384,6 +387,16 @@ const Page = () => {
                   <BioYear>2024-present</BioYear>
                   <FontAwesomeIcon icon={faUniversity} /> Studying Computer
                   Science at Newcastle University
+                </BioSection>
+                <BioSection>
+                  <BioYear>2025</BioYear>
+                  <FontAwesomeIcon icon={faServer} /> Interned at Edinburgh
+                  University's Parallel Computing Centre (EPCC)
+                </BioSection>
+                <BioSection>
+                  <BioYear>2025-present</BioYear>
+                  <FontAwesomeIcon icon={faChalkboardTeacher} /> Lab Assistant
+                  at Newcastle University
                 </BioSection>
               </AccordionPanel>
             </AccordionItem>

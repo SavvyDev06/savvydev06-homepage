@@ -98,7 +98,7 @@ function DeGoreDrawer() {
                     </Button>
                   </Link>
                   <Link href="https://apple.co/3Gf4E8w" target="_blank">
-                    <Button size={'xs'} colorScheme="purple">
+                    <Button size={'xs'} colorScheme="purple" disabled>
                       Apple Podcasts &nbsp; <FontAwesomeIcon icon={faPodcast} />
                     </Button>
                   </Link>

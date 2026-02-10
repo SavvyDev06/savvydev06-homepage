@@ -15,20 +15,33 @@ function HeadsUpToast() {
           <p>
             DeGore has been featured on the Craft of Code podcast!
             <Box display="flex" mt="2" alignItems="center">
-              <Link href="https://spoti.fi/3FQy9fw" target="_blank">
-                <Button size={'xs'} mr="1" colorScheme="blackAlpha">
+              <Link
+                href="https://open.spotify.com/episode/3haJt9oxCMWMdtWepnBAkr?si=bd70d60e785c4b91"
+                target="_blank"
+              >
+                <Button
+                  size={'xs'}
+                  // mr="1"
+                  colorScheme="green"
+                  bgColor="black"
+                  color="#1ED760"
+                  _hover={{
+                    bgColor: '#1ED760',
+                    color: 'black'
+                  }}
+                >
                   Open in Spotify &nbsp; <FontAwesomeIcon icon={faSpotify} />
                 </Button>
               </Link>
-              <Link href="https://apple.co/3Gf4E8w" target="_blank">
+              {/* <Link href="https://apple.co/3Gf4E8w" target="_blank">
                 <Button size={'xs'} colorScheme="blackAlpha">
                   Apple Podcasts &nbsp; <FontAwesomeIcon icon={faPodcast} />
                 </Button>
-              </Link>
+              </Link> */}
             </Box>
           </p>
         ),
-        status: 'info',
+        status: 'success',
         duration: 9000,
         isClosable: true
       })
