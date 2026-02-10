@@ -391,7 +391,7 @@ const Page = () => {
                 <BioSection>
                   <BioYear>2025</BioYear>
                   <FontAwesomeIcon icon={faServer} /> Interned at Edinburgh
-                  University's Parallel Computing Centre (EPCC)
+                  University&amp;s Parallel Computing Centre (EPCC)
                 </BioSection>
                 <BioSection>
                   <BioYear>2025-present</BioYear>
