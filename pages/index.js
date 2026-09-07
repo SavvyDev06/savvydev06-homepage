@@ -49,7 +49,6 @@ import {
   faN,
   faFeather,
   faDatabase,
-  faLeaf,
   faFeatherPointed,
   faShapes,
   faCarrot,
@@ -76,7 +75,15 @@ import {
   faShareNodes,
   faF,
   faServer,
-  faChalkboardTeacher
+  faChalkboardTeacher,
+  faUserGraduate,
+  faDiagramProject,
+  faBuildingColumns,
+  faGripLinesVertical,
+  faGripVertical,
+  faFire,
+  faLock,
+  faA
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -130,7 +137,7 @@ const Page = () => {
               Savvas M. Agisilaou
             </Heading>
             <ParagraphHeading>
-              Software &amp; Game Developer, Amateur Radio Operator, Music
+              HPC Systems Engineer, Amateur Radio Operator, Cyclist & Music
               Producer
             </ParagraphHeading>
           </Box>
@@ -152,19 +159,92 @@ const Page = () => {
             />
           </Box>
         </Box>
+        <Box
+          display="flex"
+          mt="2"
+          flexDirection={{ base: 'column', md: 'row' }}
+          alignItems={{ base: 'stretch', md: 'center' }}
+          gap={1}
+          flexWrap="nowrap"
+        >
+          <Link
+            href="https://www.credly.com/badges/5700dc3c-c84c-4db1-a85b-1d0d4e3dbbcd/public_url"
+            target="_blank"
+            flex="1"
+            minW={0}
+            width={{ base: '100%', md: 'auto' }}
+          >
+            <Button
+              size="sm"
+              bg="#ffffff"
+              _hover={{
+                bg: '#dddddd'
+              }}
+              color="#000000"
+              fontWeight="bold"
+              fontSize="sm"
+              width="100%"
+              px={2}
+              py={1}
+              whiteSpace="nowrap"
+            >
+              <Image
+                src="/images/nvidia-logo-horz.svg"
+                alt="NVIDIA"
+                width="90px"
+                objectFit="cover"
+                flexShrink={0}
+                mx={-1}
+              />
+              AI Elite Certified
+            </Button>
+          </Link>
+          <Link
+            href="https://www.credly.com/badges/bf9017df-2b30-4f59-bd11-1bc8262d3d05/public_url"
+            target="_blank"
+            flex="1"
+            minW={0}
+            width={{ base: '100%', md: 'auto' }}
+          >
+            <Button
+              size="sm"
+              bg="#ffffff"
+              _hover={{
+                bg: '#dddddd'
+              }}
+              color="#000000"
+              fontWeight="bold"
+              fontSize="sm"
+              width="100%"
+              px={2}
+              py={1}
+              whiteSpace="nowrap"
+            >
+              <Image
+                src="/images/nvidia-logo-horz.svg"
+                alt="NVIDIA"
+                width="90px"
+                objectFit="cover"
+                flexShrink={0}
+                mx={-1}
+              />
+              AI Advisor Certified
+            </Button>
+          </Link>
+        </Box>
         <Section delay={0.1}>
           <Heading fontWeight="600" as="h3" variant="section-title">
             Work
           </Heading>
           <ParagraphMain>
-            Savvas – better known as Savvy – is a full-stack software developer
-            with a passion for creating useful software, to help improve our
-            daily lives through the power of code.
+            Savvas – better known as Savvy – is a HPC Systems Engineer & AI
+            Researcher with a passion for creating useful software, to help
+            improve our daily lives through the power of code.
           </ParagraphMain>
           <ParagraphMain>
-            He often finds himself engineering hardware as well, such as printed
-            circuit boards, 3D Prints / CAD, and regularly tinkers with Arduino
-            and Raspberry Pi boards to make all sorts of cool stuff.
+            He often finds himself engineering hardware as well, including
+            printed circuit boards, 3D Prints / CAD, and regularly tinkers with
+            Arduino and Raspberry Pi boards to make all sorts of cool stuff.
             <br />
           </ParagraphMain>
           <ParagraphMain style={{ fontWeight: '600' }}>
@@ -390,13 +470,18 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                   <BioYear>2025</BioYear>
-                  <FontAwesomeIcon icon={faServer} /> Interned at Edinburgh
-                  University&apos;s Parallel Computing Centre (EPCC)
+                  <FontAwesomeIcon icon={faUserGraduate} /> Interned at
+                  Edinburgh University&apos;s Parallel Computing Centre (EPCC)
                 </BioSection>
                 <BioSection>
-                  <BioYear>2025-present</BioYear>
+                  <BioYear>2025-2026</BioYear>
                   <FontAwesomeIcon icon={faChalkboardTeacher} /> Lab Assistant
                   at Newcastle University
+                </BioSection>
+                <BioSection>
+                  <BioYear>2026-present</BioYear>
+                  <FontAwesomeIcon icon={faServer} /> HPC Systems Engineer @
+                  Boston Limited
                 </BioSection>
               </AccordionPanel>
             </AccordionItem>
@@ -494,7 +579,7 @@ const Page = () => {
 
         <Section delay={0.5}>
           <Heading fontWeight="600" as="h3" variant="section-title">
-            Technologies (Tech Stacks)
+            Technologies
           </Heading>
           <ParagraphBio>
             <FontAwesomeIcon icon={faCheckToSlot} />{' '}
@@ -502,11 +587,21 @@ const Page = () => {
               <u>Knowledgeable</u>
             </b>
             <ParagraphLeftPadded>
-              <FontAwesomeIcon icon={faDocker} /> Docker
+              <FontAwesomeIcon icon={faBuildingColumns} /> SLURM
               <br />
-              <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
+              <FontAwesomeIcon icon={faPython} /> CUDA, InfiniBand, RDMA
               <br />
-              <FontAwesomeIcon icon={faLeaf} /> MongoDB
+              <FontAwesomeIcon icon={faGripLinesVertical} />
+              <FontAwesomeIcon icon={faGripVertical} /> OpenMPI, MPICH
+              <br />
+              <FontAwesomeIcon icon={faFire} /> NETLIB-HPL, STREAM, HPCG,
+              GPU-BURN
+              <br />
+              <FontAwesomeIcon icon={faDocker} /> Docker, Kubernetes
+              <br />
+              <FontAwesomeIcon icon={faDatabase} /> PostgreSQL, MongoDB, MariaDB
+              <br />
+              <FontAwesomeIcon icon={faLock} /> Caddy
               <br />
               <FontAwesomeIcon icon={faFeatherPointed} /> Apache Server
             </ParagraphLeftPadded>
@@ -515,6 +610,10 @@ const Page = () => {
               <u>Learning</u>
             </b>{' '}
             <ParagraphLeftPadded>
+              <FontAwesomeIcon icon={faDiagramProject} /> Warewulf
+              <br />
+              <FontAwesomeIcon icon={faA} /> Ansible
+              <br />
               <FontAwesomeIcon icon={faShapes} /> Redis
             </ParagraphLeftPadded>
             <FontAwesomeIcon icon={faCalendarCheck} />{' '}
@@ -563,14 +662,16 @@ const Page = () => {
             I 💜
           </Heading>
           <ParagraphBio>
-            Coding,{' '}
-            <Link href="https://unitedweco.de/degore" target="_blank">
-              Artificial Intelligence / Machine Learning
-            </Link>
-            , PCB Design, CAD, Music (Digital Composition &amp; Piano),
-            Aerospace, Podcasts,{' '}
+            Learning Japanese, Cycling, Traveling the world, Music, Aerospace,{' '}
             <Link href="https://blog.unitedweco.de" target="_blank">
               Blogging
+            </Link>{' '}
+            and we can't forget{' '}
+            <Link
+              href="https://cdn.linkxr.one/misc/sunshine-and-rocky.png"
+              target="_blank"
+            >
+              my dog Sunshine and ~15 cats
             </Link>
           </ParagraphBio>
         </Section>
