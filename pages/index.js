@@ -666,7 +666,7 @@ const Page = () => {
             <Link href="https://blog.unitedweco.de" target="_blank">
               Blogging
             </Link>{' '}
-            and we can't forget{' '}
+            and we can&apos;t forget{' '}
             <Link
               href="https://cdn.linkxr.one/misc/sunshine-and-rocky.png"
               target="_blank"
