@@ -27,7 +27,7 @@ const Work = () => {
           algorithms and much more.
         </P>
         <P>
-          DeGore is currently protecting 1M+ users in thousands of communities
+          DeGore is currently protecting 2M+ users in thousands of communities
           around the world. Not only does DeGore help prevent users from being
           exposed to harmful content, but it also protects marginalised groups
           from targeted attacks.
@@ -47,8 +47,8 @@ const Work = () => {
             <Meta>Tech Stack</Meta>
             <span>
               NodeJS, DiscordJS, Docker, MongoDB, PostgreSQL, React TypeScript
-              (web dashboard), ExpressJS (API), Stripe (linked to Chargebee),
-              Datadog (monitoring)
+              (web dashboard), ExpressJS (API), Stripe + Chargebee, Datadog
+              (monitoring)
             </span>
           </ListItem>
           <ListItem>

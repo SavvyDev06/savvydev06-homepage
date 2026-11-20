@@ -25,7 +25,7 @@ const Projects = () => {
           <Section>
             <ProjectGridItem id="degore" title="DeGore" thumbnail={thumbDeGore}>
               The most advanced AI-Powered image moderation solution for online
-              communities, protecting over 1M users
+              communities, protecting over 2M users
             </ProjectGridItem>
           </Section>
 

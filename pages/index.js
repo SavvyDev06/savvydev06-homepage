@@ -440,7 +440,7 @@ const Page = () => {
                 <BioSection>
                   <BioYear>2021-present</BioYear>
                   <FontAwesomeIcon icon={faRocket} /> Founded DeGore, an AI
-                  Research startup company protecting over a million users
+                  Research startup company protecting over two million users
                   worldwide
                 </BioSection>
                 <BioSection>
